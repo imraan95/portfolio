@@ -36,22 +36,22 @@ export default function PortfolioPage() {
               {/* Rome2Rio Projects */}
               <div className="scroll-animation">
                 <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
-                  <h2 className="text-2xl font-semibold text-white mb-4">Rome2Rio Monetization</h2>
+                  <h2 className="text-2xl font-semibold text-white mb-4">Marketplace Product</h2>
                   <div className="aspect-video relative mb-6 rounded-lg overflow-hidden">
                     <Image
-                      src="/images/rome2rio.png"
-                      alt="Rome2Rio Project"
+                      src="/images/rome2rio-marketplace.jpg"
+                      alt="Rome2Rio Marketplace"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <p className="text-white mb-4">
-                    Led the monetization strategy for Rome2Rio, implementing new revenue streams and optimizing existing ones.
+                    Led the development and optimization of Rome2Rio's marketplace product, focusing on hotel bookings and transportation options.
                   </p>
                   <ul className="text-white space-y-2">
-                    <li>• Increased conversion rates by 25%</li>
-                    <li>• Implemented new ad placement strategy</li>
-                    <li>• Optimized user journey for better monetization</li>
+                    <li>• Enhanced user experience with intuitive search and booking flow</li>
+                    <li>• Implemented dynamic pricing and availability features</li>
+                    <li>• Integrated multiple travel service providers</li>
                   </ul>
                 </div>
               </div>
