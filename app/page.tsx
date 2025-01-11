@@ -164,10 +164,10 @@ export default function Page() {
                 </div>
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 fade-in delay-3">
-                  <Link href="/portfolio" className="menu-text inline-flex items-center justify-center px-6 py-3 text-base font-medium bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors">
+                  <Link href="/portfolio" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors">
                     Check out my work
                   </Link>
-                  <Link href="/contact" className="menu-text inline-flex items-center justify-center px-6 py-3 text-base font-medium bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-colors">
+                  <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-colors">
                     Get in touch
                   </Link>
                 </div>
