@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useEffect, useRef } from "react"
+import Image from "next/image"
 
 export default function Page() {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -133,15 +134,14 @@ export default function Page() {
       {/* Navigation */}
       <header className="flex items-center justify-between py-4 px-6 border-b border-neutral-800/50">
         <Link href="/" className="text-lg font-semibold">
-          Software Composer LP
+          Mohamed Imraan Iqbal
         </Link>
-        <nav className="flex items-center gap-4">
-          <Button variant="ghost" size="sm" asChild>
-            <Link href="/login">Log in</Link>
-          </Button>
-          <Button size="sm" asChild>
-            <Link href="/signup">Sign up</Link>
-          </Button>
+        <nav className="flex items-center gap-6">
+          <Link href="#about" className="text-sm text-white hover:text-white/80 transition-colors">About</Link>
+          <Link href="#experience" className="text-sm text-white hover:text-white/80 transition-colors">Experience</Link>
+          <Link href="#education" className="text-sm text-white hover:text-white/80 transition-colors">Education</Link>
+          <Link href="#skills" className="text-sm text-white hover:text-white/80 transition-colors">Skills</Link>
+          <Link href="mailto:m.imraan95@gmail.com" className="text-sm text-white hover:text-white/80 transition-colors">Contact</Link>
         </nav>
       </header>
 
@@ -149,292 +149,170 @@ export default function Page() {
         {/* Hero Section */}
         <section className="py-20 px-6 relative">
           <div className="hero-glow" />
-          <div className="max-w-[1200px] mx-auto text-center relative z-10">
-            <div className="inline-flex items-center px-3 py-1 text-sm text-neutral-400 mb-8 glimmer-pill fade-in">
-              <span>3 Prompts to a Perfect Landing Page</span>
-            </div>
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight fade-in delay-1">
-              The Cursor Template<br />For Landing Pages
-            </h1>
-            <p className="text-xl text-neutral-400 mb-8 max-w-2xl mx-auto fade-in delay-2">
-              Create stunning landing pages in minutes, not months. Save $10,000+ on design and development
-              with our Cursor-powered template.
-            </p>
-            <div className="fade-in delay-3">
-              <Button size="lg" className="rounded-full">
-                Download Template
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        {/* Demo Section */}
-        <section className="py-20 px-6">
-          <div className="max-w-[1200px] mx-auto scroll-animation">
-            <div className="glimmer-card">
-              <div className="bg-neutral-900">
-                <div className="flex items-center gap-2 p-2 md:p-3 border-b border-neutral-800">
-                  <div className="flex gap-1.5 md:gap-2">
-                    <div className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-red-500" />
-                    <div className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-yellow-500" />
-                    <div className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-green-500" />
-                  </div>
+          <div className="max-w-[1200px] mx-auto relative z-10">
+            <div className="flex flex-col items-center mb-12">
+              <div className="w-48 h-48 rounded-full overflow-hidden mb-8 fade-in">
+                <Image
+                  src="/images/WhatsApp Image 2021-07-28 at 22.41.53 (2) (1).jpeg"
+                  alt="Mohamed Imraan Iqbal"
+                  width={192}
+                  height={192}
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight fade-in delay-1 text-center">
+                Mohamed Imraan Iqbal
+              </h1>
+              <div className="max-w-2xl text-center">
+                <p className="text-2xl text-white mb-4 fade-in delay-2">
+                  Product & Technology Leader
+                </p>
+                <p className="text-xl text-white mb-4 fade-in delay-2">
+                  Seasoned product leader with demonstrated success of launching and growing Digital SAAS, Fintech, Marketplace products.
+                </p>
+                <div className="flex justify-center gap-6 text-white mb-8 fade-in delay-2">
+                  <span className="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Melbourne, Australia
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5C2 7 4 5 6.5 5H18c2.2 0 4 1.8 4 4v8Z"/><polyline points="15,9 18,9 18,11"/><path d="M6.5 5C9 5 11 7 11 9.5V17a2 2 0 0 1-2 2v0"/><line x1="6" y1="10" x2="7" y2="10"/></svg>
+                    Permanent Resident
+                  </span>
                 </div>
-                <div className="flex flex-col md:flex-row h-[500px] md:h-[700px]">
-                  {/* Sidebar */}
-                  <div className="hidden md:block md:w-64 border-r border-neutral-800 p-4 flex-shrink-0">
-                    <div className="flex items-center gap-2 p-2 bg-neutral-800 rounded-lg mb-4">
-                      <div className="w-8 h-8 rounded-full bg-neutral-700" />
-                      <span>Cursor AI</span>
-                    </div>
-                    <div className="space-y-1">
-                      <div className="flex items-center justify-between p-2 rounded hover:bg-neutral-800 transition-colors">
-                        <span>Prompts</span>
-                        <span className="text-sm text-neutral-500">3</span>
-                      </div>
-                      <div className="flex items-center justify-between p-2 rounded hover:bg-neutral-800 transition-colors">
-                        <span>Components</span>
-                        <span className="text-sm text-neutral-500">25+</span>
-                      </div>
-                      <div className="flex items-center justify-between p-2 rounded hover:bg-neutral-800 transition-colors">
-                        <span>Time Saved</span>
-                        <span className="text-sm text-neutral-500">100h+</span>
-                      </div>
-                      <div className="flex items-center justify-between p-2 rounded hover:bg-neutral-800 transition-colors">
-                        <span>Money Saved</span>
-                        <span className="text-sm text-green-500">$10k+</span>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Mobile Stats Bar */}
-                  <div className="md:hidden w-full border-b border-neutral-800 p-3 bg-neutral-800/50">
-                    <div className="flex justify-between items-center">
-                      <div className="flex items-center gap-2">
-                        <div className="w-6 h-6 rounded-full bg-neutral-700" />
-                        <span className="text-sm font-medium">Cursor AI</span>
-                      </div>
-                      <div className="flex items-center gap-4 text-xs">
-                        <span className="text-neutral-400">3 Prompts</span>
-                        <span className="text-green-500 font-medium">$10k+ Saved</span>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Main Content */}
-                  <div className="flex-1 flex flex-col p-3 md:p-4 overflow-hidden">
-                    <div className="flex items-center justify-between mb-4 sticky top-0">
-                      <input
-                        type="text"
-                        placeholder="Enter your prompt here..."
-                        className="w-full max-w-2xl px-3 md:px-4 py-2 bg-neutral-800 rounded-lg border border-neutral-700 text-sm md:text-base placeholder:text-neutral-500"
-                      />
-                      <div className="flex items-center gap-1 md:gap-2 ml-2">
-                        <Button variant="ghost" size="icon" className="h-8 w-8 md:h-9 md:w-9">
-                          <span className="sr-only">Generate</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3v19"/><path d="M5 12h14"/></svg>
-                        </Button>
-                        <Button variant="ghost" size="icon" className="h-8 w-8 md:h-9 md:w-9">
-                          <span className="sr-only">Save</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
-                        </Button>
-                      </div>
-                    </div>
-                    <div className="space-y-4 overflow-y-auto flex-1 pr-1">
-                      <div className="p-4 rounded-lg bg-neutral-800">
-                        <div className="flex items-center gap-3 md:gap-4 mb-2">
-                          <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-neutral-700 flex-shrink-0" />
-                          <div className="min-w-0 flex-1">
-                            <h3 className="font-medium text-sm md:text-base">Cursor AI</h3>
-                            <p className="text-xs md:text-sm text-neutral-400">Prompt #1: Hero Section</p>
-                          </div>
-                          <div className="text-xs md:text-sm text-green-400 flex-shrink-0">
-                            Generated in 2s
-                          </div>
-                        </div>
-                        <p className="text-sm md:text-base text-neutral-300">
-                          I&apos;ll create a modern, attention-grabbing hero section for your landing page. 
-                          Just describe your product&apos;s main value proposition, and I&apos;ll generate the perfect
-                          layout with compelling copy and visuals.
-                        </p>
-                      </div>
-
-                      <div className="p-6 md:p-8 rounded-lg bg-neutral-800/50 border border-neutral-700 border-dashed text-center">
-                        <div className="mb-4">
-                          <svg className="mx-auto w-10 h-10 md:w-12 md:h-12 text-neutral-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                          </svg>
-                        </div>
-                        <h3 className="text-lg md:text-xl font-semibold mb-2">Upload any image and get any fucking landing page you want</h3>
-                        <p className="text-sm md:text-base text-neutral-400 mb-4">Drag and drop an image, or click to browse</p>
-                        <Button variant="outline" size="lg" className="h-9 md:h-10 text-sm md:text-base">
-                          Choose Image
-                        </Button>
-                      </div>
-
-                      <div className="p-4 rounded-lg bg-neutral-800">
-                        <div className="flex items-center gap-3 md:gap-4 mb-2">
-                          <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-neutral-700 flex-shrink-0" />
-                          <div className="min-w-0 flex-1">
-                            <h3 className="font-medium text-sm md:text-base">Cursor AI</h3>
-                            <p className="text-xs md:text-sm text-neutral-400">Image Analysis</p>
-                          </div>
-                          <div className="text-xs md:text-sm text-neutral-400 flex-shrink-0">
-                            Waiting for image...
-                          </div>
-                        </div>
-                        <p className="text-sm md:text-base text-neutral-300">
-                          yup its really that easy, download the template, open it in cursor, upload an image, and i will create that website... like legit
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              </div>
+              <div className="flex justify-center space-x-4 fade-in delay-3">
+                <Link href="mailto:m.imraan95@gmail.com" target="_blank">
+                  <Button variant="ghost" size="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </Button>
+                </Link>
+                <Link href="https://www.linkedin.com/in/mohamed-imraan/" target="_blank">
+                  <Button variant="ghost" size="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Features Section */}
-        <section className="py-32 px-6 border-t border-neutral-800">
+        {/* Experience Section */}
+        <section id="experience" className="py-20 px-6 border-t border-neutral-800">
           <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-24 scroll-animation">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Create in Minutes, Not Months</h2>
-              <p className="text-neutral-400">Transform your ideas into reality with three simple prompts.</p>
-            </div>
-
-            <div className="relative">
-              {/* Decorative line connecting the steps */}
-              <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-neutral-800 via-pink-500/20 to-neutral-800 hidden md:block" />
-              
-              <div className="grid md:grid-cols-3 gap-24 relative">
-                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800 scroll-animation scroll-delay-1">
-                  <div className="text-2xl mb-6">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                      <polyline points="7 10 12 15 17 10"/>
-                      <line x1="12" y1="15" x2="12" y2="3"/>
-                    </svg>
+            <h2 className="text-3xl font-bold mb-12 scroll-animation">Professional Experience</h2>
+            
+            <div className="space-y-12">
+              {/* Rome2Rio */}
+              <div className="scroll-animation">
+                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+                  <div className="flex flex-col md:flex-row justify-between mb-4">
+                    <div>
+                      <h3 className="text-xl font-semibold text-white">Senior Product Manager</h3>
+                      <p className="text-pink-500">
+                        <a href="https://www.rome2rio.com" target="_blank" className="hover:text-pink-400 transition-colors">
+                          Rome2Rio
+                        </a>
+                      </p>
+                    </div>
+                    <p className="text-white">Dec 2022 - Present</p>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">Download Template</h3>
-                  <p className="text-neutral-400">
-                    Get started with our production-ready template. It&apos;s packed with everything you need to build a stunning landing page.
-                  </p>
+                  <p className="text-white italic mb-4">Owns all monetisation products including Conversion, and Ads across rome2rio and omio.com Ads</p>
+                  <ul className="space-y-2 text-white">
+                    <li>• Owning the accommodation product line (web & app) including Acquisition, Engagement, Conversion and Retention</li>
+                    <li>• Working with engineering, analytics, commercial and design teams to revamp existing product</li>
+                    <li>• Identifying market opportunities through market research, competitor research to shape product vision</li>
+                    <li>• Leading a team of 9</li>
+                    <li>• Undertaking growth experiments for funnel conversion</li>
+                    <li>• Accountable for product innovation, OKRs & revenue share of product line</li>
+                  </ul>
                 </div>
+              </div>
 
-                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800 scroll-animation scroll-delay-2">
-                  <div className="text-2xl mb-6">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                    </svg>
+              {/* MyGigsters */}
+              <div className="scroll-animation scroll-delay-1">
+                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+                  <div className="flex flex-col md:flex-row justify-between mb-4">
+                    <div>
+                      <h3 className="text-xl font-semibold text-white">Head of Product</h3>
+                      <p className="text-pink-500">
+                        <a href="https://www.mygigsters.com.au" target="_blank" className="hover:text-pink-400 transition-colors">
+                          MyGigsters
+                        </a>
+                      </p>
+                    </div>
+                    <p className="text-white">Nov 2020 - Dec 2022</p>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">Tell Cursor What You Want</h3>
-                  <p className="text-neutral-400">
-                    Describe your vision in plain English. Cursor will transform your words into a beautiful, functional design.
-                  </p>
-                </div>
-
-                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800 scroll-animation scroll-delay-3">
-                  <div className="text-2xl mb-6">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10"/>
-                      <line x1="2" y1="12" x2="22" y2="12"/>
-                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">Deploy to the Internet</h3>
-                  <p className="text-neutral-400">
-                    Push your new landing page live with one click. Share your creation with the world in seconds.
-                  </p>
+                  <p className="text-white italic mb-4">Fintech Startup funded by the Australian Government</p>
+                  <ul className="space-y-2 text-white">
+                    <li>• Managed life cycles of 2 product lines - accounting product and an investment tool</li>
+                    <li>• Owned product growth KPIs with M-o-M growth rate of 90% and 40% retention rate</li>
+                    <li>• Setup & managed a remote cross-functional team of 2 BAs, 9 engineers & 2 designers</li>
+                    <li>• Launched MVP in less than 2 months through lean agile sprints & user interviews</li>
+                    <li>• Setup Analytics tech stack to measure and manage user journey map across all products & channels</li>
+                    <li>• Pitched the product vision and pivotal in raising pre-seed round with top VCs</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Pricing Section */}
-        <section className="py-20 px-6 border-t border-neutral-800">
-          <div className="max-w-[1200px] mx-auto text-center">
-            <div className="scroll-animation">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Pricing (Plot Twist: It&apos;s All Free)</h2>
-              <p className="text-neutral-400 mb-12">Because great tools shouldn&apos;t cost a fortune. Or anything.</p>
+        {/* Education Section */}
+        <section id="education" className="py-20 px-6 border-t border-neutral-800">
+          <div className="max-w-[1200px] mx-auto">
+            <h2 className="text-3xl font-bold mb-12 scroll-animation">Education</h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="scroll-animation">
+                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+                  <h3 className="text-xl font-semibold mb-2 text-white">Master of Business</h3>
+                  <p className="text-pink-500 mb-4">Monash University, Australia</p>
+                  <ul className="space-y-2 text-white">
+                    <li>• Graduated in the top 2 percentile</li>
+                    <li>• Dean's honor award</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="scroll-animation scroll-delay-1">
+                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+                  <h3 className="text-xl font-semibold mb-2 text-white">Bachelor of Technology in Information Technology</h3>
+                  <p className="text-pink-500 mb-4">College of Engineering Guindy, Anna University, India</p>
+                  <ul className="space-y-2 text-white">
+                    <li>• Graduated First Class at the oldest engineering institute in Asia</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="col-span-1">
-                {/* Starter Plan */}
+          </div>
+        </section>
+
+        {/* Skills Section */}
+        <section id="skills" className="py-20 px-6 border-t border-neutral-800">
+          <div className="max-w-[1200px] mx-auto">
+            <h2 className="text-3xl font-bold mb-12 scroll-animation">Technical Skills</h2>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="scroll-animation">
                 <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
-                  <h3 className="text-xl font-semibold mb-2">Starter</h3>
-                  <div className="text-3xl font-bold mb-4">$0</div>
-                  <p className="text-neutral-400 mb-6">Perfect for getting started</p>
-                  <ul className="space-y-4 mb-8">
-                    <li className="flex items-center gap-2">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M20 6L9 17l-5-5"/>
-                      </svg>
-                      Basic features
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M20 6L9 17l-5-5"/>
-                      </svg>
-                      Community support
-                    </li>
-                  </ul>
-                  <Button className="w-full" variant="outline">Get Started</Button>
+                  <h3 className="text-xl font-semibold mb-4 text-white">Project Management Stack</h3>
+                  <p className="text-white">JIRA, Trello, Miro, Confluence, Notion, Asana</p>
                 </div>
               </div>
-              <div className="col-span-1">
-                {/* Pro Plan */}
-                <div className="bg-neutral-900 p-8 rounded-xl border-2 border-pink-500/20 relative">
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-pink-500/10 text-pink-500 px-3 py-1 rounded-full text-xs font-medium">
-                    Most Popular
-                  </div>
-                  <h3 className="text-lg font-semibold mb-2">Pro</h3>
-                  <div className="text-2xl font-bold mb-1">$0</div>
-                  <div className="text-xs text-neutral-400 mb-4">Save $0 when you pay yearly!</div>
-                  <p className="text-sm text-neutral-400 mb-6">Everything you need</p>
-                  <ul className="space-y-4 mb-8 text-sm">
-                    <li className="flex items-center gap-2">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M20 6L9 17l-5-5"/>
-                      </svg>
-                      Everything in Starter
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M20 6L9 17l-5-5"/>
-                      </svg>
-                      Advanced features (free)
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M20 6L9 17l-5-5"/>
-                      </svg>
-                      Priority support (also free)
-                    </li>
-                  </ul>
-                  <Button className="w-full text-sm">Upgrade for $0</Button>
+
+              <div className="scroll-animation scroll-delay-1">
+                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+                  <h3 className="text-xl font-semibold mb-4 text-white">Analytics Stack</h3>
+                  <p className="text-white">Google Analytics, Looker, Firebase, Optimizely, Excel</p>
                 </div>
               </div>
-              <div className="col-span-1">
-                {/* Enterprise Plan */}
+
+              <div className="scroll-animation scroll-delay-2">
                 <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
-                  <h3 className="text-xl font-semibold mb-2">Enterprise</h3>
-                  <div className="text-3xl font-bold mb-4">$0</div>
-                  <p className="text-neutral-400 mb-6">For larger teams</p>
-                  <ul className="space-y-4 mb-8">
-                    <li className="flex items-center gap-2">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M20 6L9 17l-5-5"/>
-                      </svg>
-                      Everything in Pro
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M20 6L9 17l-5-5"/>
-                      </svg>
-                      Custom features (free)
-                    </li>
-                  </ul>
-                  <Button className="w-full" variant="outline">Contact Sales</Button>
+                  <h3 className="text-xl font-semibold mb-4 text-white">Design Stack</h3>
+                  <p className="text-white">Adobe Suite, Figma, Sketch, Canva</p>
                 </div>
               </div>
             </div>
@@ -444,32 +322,18 @@ export default function Page() {
 
       <footer className="py-8 px-6 border-t border-neutral-800/50 scroll-animation">
         <div className="max-w-[1200px] mx-auto flex items-center justify-between">
-          <div className="text-sm text-neutral-400">
-            © 2024 Software Composer LP. All rights reserved.
+          <div className="text-sm text-white">
+            © 2024 Mohamed Imraan Iqbal. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">
-              <span className="sr-only">Twitter</span>
+            <a href="mailto:m.imraan95@gmail.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
+              <span className="sr-only">Email</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
               </svg>
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">
-              <span className="sr-only">GitHub</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-              </svg>
-            </a>
-            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">
-              <span className="sr-only">Discord</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 6h0a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3h-7a3 3 0 0 1-3-3v0"/>
-                <path d="M6 18v-7a3 3 0 0 1 3-3h7"/>
-                <circle cx="8" cy="12" r="1"/>
-                <circle cx="16" cy="12" r="1"/>
-              </svg>
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/mohamed-imraan/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
               <span className="sr-only">LinkedIn</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
