@@ -132,11 +132,11 @@ export default function Page() {
       `}</style>
 
       {/* Navigation */}
-      <header className="flex items-center justify-between py-4 px-6 border-b border-neutral-800/50">
-        <Link href="/" className="text-lg font-semibold">
+      <header className="flex flex-col md:flex-row md:items-center justify-between py-4 px-4 md:px-6 border-b border-neutral-800/50">
+        <Link href="/" className="text-lg font-semibold text-center md:text-left mb-4 md:mb-0">
           Mohamed Imraan Iqbal
         </Link>
-        <nav className="flex items-center gap-6">
+        <nav className="flex flex-wrap justify-center md:justify-end items-center gap-3 md:gap-6">
           <Link href="#about" className="text-sm text-white hover:text-white/80 transition-colors">About</Link>
           <Link href="#experience" className="text-sm text-white hover:text-white/80 transition-colors">Experience</Link>
           <Link href="#education" className="text-sm text-white hover:text-white/80 transition-colors">Education</Link>
@@ -148,11 +148,11 @@ export default function Page() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="py-20 px-6 relative">
+        <section className="py-12 md:py-20 px-4 md:px-6 relative">
           <div className="hero-glow" />
           <div className="max-w-[1200px] mx-auto relative z-10">
             <div className="flex flex-col items-center mb-12">
-              <div className="w-48 h-48 rounded-full overflow-hidden mb-8 fade-in relative">
+              <div className="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden mb-6 md:mb-8 fade-in relative">
                 <Image
                   src="/images/Profile Pic.jpeg"
                   alt="Mohamed Imraan Iqbal"
@@ -161,18 +161,18 @@ export default function Page() {
                   priority
                 />
               </div>
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight fade-in delay-1 text-center">
+              <h1 className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 tracking-tight fade-in delay-1 text-center px-4">
                 Mohamed Imraan Iqbal
               </h1>
-              <div className="max-w-2xl text-center">
-                <p className="text-2xl text-white mb-4 fade-in delay-2">
+              <div className="max-w-2xl text-center px-4">
+                <p className="text-xl md:text-2xl text-white mb-3 md:mb-4 fade-in delay-2">
                   Tech Product Leader
                 </p>
-                <p className="text-xl text-white mb-4 fade-in delay-2">
+                <p className="text-lg md:text-xl text-white mb-4 fade-in delay-2">
                   Digital SAAS, Fintech, Marketplace and Consumer products
                 </p>
-                <div className="flex justify-center gap-6 text-white mb-8 fade-in delay-2">
-                  <span className="flex items-center gap-2">
+                <div className="flex justify-center gap-4 md:gap-6 text-white mb-6 md:mb-8 fade-in delay-2">
+                  <span className="flex items-center gap-2 text-sm md:text-base">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     Melbourne, Australia
                   </span>
@@ -201,9 +201,9 @@ export default function Page() {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="py-20 px-6 border-t border-neutral-800">
+        <section id="experience" className="py-12 md:py-20 px-4 md:px-6 border-t border-neutral-800">
           <div className="max-w-[1200px] mx-auto">
-            <h2 className="text-3xl font-bold mb-12 scroll-animation">Professional Experience</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 scroll-animation">Professional Experience</h2>
             
             <div className="space-y-12">
               {/* Rome2Rio */}
@@ -262,9 +262,9 @@ export default function Page() {
         </section>
 
         {/* Education Section */}
-        <section id="education" className="py-20 px-6 border-t border-neutral-800">
+        <section id="education" className="py-12 md:py-20 px-4 md:px-6 border-t border-neutral-800">
           <div className="max-w-[1200px] mx-auto">
-            <h2 className="text-3xl font-bold mb-12 scroll-animation">Education</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 scroll-animation">Education</h2>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="scroll-animation">
@@ -292,9 +292,9 @@ export default function Page() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="py-20 px-6 border-t border-neutral-800">
+        <section id="skills" className="py-12 md:py-20 px-4 md:px-6 border-t border-neutral-800">
           <div className="max-w-[1200px] mx-auto">
-            <h2 className="text-3xl font-bold mb-12 scroll-animation">Technical Skills</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 scroll-animation">Technical Skills</h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="scroll-animation">
@@ -322,9 +322,9 @@ export default function Page() {
         </section>
 
         {/* Soft Skills Section */}
-        <section id="soft-skills" className="py-20 px-6 border-t border-neutral-800">
+        <section id="soft-skills" className="py-12 md:py-20 px-4 md:px-6 border-t border-neutral-800">
           <div className="max-w-[1200px] mx-auto">
-            <h2 className="text-3xl font-bold mb-12 scroll-animation">Soft Skills</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 scroll-animation">Soft Skills</h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="scroll-animation">
@@ -358,9 +358,9 @@ export default function Page() {
           </div>
         </section>
 
-        <footer className="py-8 px-6 border-t border-neutral-800/50 scroll-animation">
-          <div className="max-w-[1200px] mx-auto flex items-center justify-between">
-            <div className="text-sm text-white">
+        <footer className="py-6 md:py-8 px-4 md:px-6 border-t border-neutral-800/50 scroll-animation">
+          <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+            <div className="text-xs md:text-sm text-white text-center md:text-left">
               © 2024 Mohamed Imraan Iqbal. All rights reserved.
             </div>
             <div className="flex items-center gap-6">
