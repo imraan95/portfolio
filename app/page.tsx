@@ -131,21 +131,6 @@ export default function Page() {
         .scroll-delay-3 { transition-delay: 0.3s; }
       `}</style>
 
-      {/* Navigation */}
-      <header className="flex flex-col md:flex-row md:items-center justify-between py-4 px-4 md:px-6 border-b border-neutral-800/50">
-        <Link href="/" className="text-lg font-semibold text-center md:text-left mb-4 md:mb-0">
-          Mohamed Imraan Iqbal
-        </Link>
-        <nav className="flex flex-wrap justify-center md:justify-end items-center gap-3 md:gap-6">
-          <Link href="#about" className="text-sm text-white hover:text-white/80 transition-colors">About</Link>
-          <Link href="#experience" className="text-sm text-white hover:text-white/80 transition-colors">Experience</Link>
-          <Link href="#education" className="text-sm text-white hover:text-white/80 transition-colors">Education</Link>
-          <Link href="#skills" className="text-sm text-white hover:text-white/80 transition-colors">Skills</Link>
-          <Link href="#soft-skills" className="text-sm text-white hover:text-white/80 transition-colors">Soft Skills</Link>
-          <Link href="mailto:m.imraan95@gmail.com" className="text-sm text-white hover:text-white/80 transition-colors">Contact</Link>
-        </nav>
-      </header>
-
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="py-12 md:py-20 px-4 md:px-6 relative">
@@ -155,14 +140,14 @@ export default function Page() {
               <div className="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden mb-6 md:mb-8 fade-in relative">
                 <Image
                   src="/images/Profile Pic.jpeg"
-                  alt="Mohamed Imraan Iqbal"
+                  alt="Imraan"
                   fill
                   className="object-cover"
                   priority
                 />
               </div>
               <h1 className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 tracking-tight fade-in delay-1 text-center px-4">
-                Mohamed Imraan Iqbal
+                Imraan
               </h1>
               <div className="max-w-2xl text-center px-4">
                 <p className="text-xl md:text-2xl text-white mb-3 md:mb-4 fade-in delay-2">
@@ -361,7 +346,7 @@ export default function Page() {
         <footer className="py-6 md:py-8 px-4 md:px-6 border-t border-neutral-800/50 scroll-animation">
           <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
             <div className="text-xs md:text-sm text-white text-center md:text-left">
-              © 2024 Mohamed Imraan Iqbal. All rights reserved.
+              © 2024 Imraan. All rights reserved.
             </div>
             <div className="flex items-center gap-6">
               <a href="mailto:m.imraan95@gmail.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
