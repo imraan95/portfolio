@@ -49,12 +49,20 @@ export default function PortfolioPage() {
                   <p className="text-white mb-4">
                     Led the development and optimization of Rome2Rio's marketplace product, focusing on hotel bookings and transportation options.
                   </p>
-                  <ul className="text-white space-y-2">
+                  <ul className="text-white space-y-2 mb-6">
                     <li>• Enhanced user experience with intuitive search and booking flow</li>
                     <li>• Implemented dynamic pricing and availability features</li>
                     <li>• Integrated multiple travel service providers</li>
                     <li>• Improved conversions by 1.5x and improved Ads monetisation by 2x</li>
                   </ul>
+                  <a 
+                    href="https://www.rome2rio.com/map/Melbourne/Rome#trips"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex w-full items-center justify-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors"
+                  >
+                    Visit Rome2Rio
+                  </a>
                 </div>
               </div>
 
@@ -83,11 +91,19 @@ export default function PortfolioPage() {
                   <p className="text-white mb-4">
                     Developed and launched a comprehensive fintech platform for gig economy workers.
                   </p>
-                  <ul className="text-white space-y-2">
+                  <ul className="text-white space-y-2 mb-6">
                     <li>• Built and launched MVP in 2 months</li>
                     <li>• Achieved 90% month-over-month growth</li>
                     <li>• Successfully raised pre-seed funding</li>
                   </ul>
+                  <a 
+                    href="https://mygigsters.com.au"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex w-full items-center justify-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors"
+                  >
+                    Visit MyGigsters
+                  </a>
                 </div>
               </div>
 
@@ -116,12 +132,20 @@ export default function PortfolioPage() {
                   <p className="text-white mb-4">
                     Led comprehensive growth and marketing initiatives for Jora App across Asian markets.
                   </p>
-                  <ul className="text-white space-y-2">
+                  <ul className="text-white space-y-2 mb-6">
                     <li>• Led Jora App growth across Asia, focusing on user acquisition across 36 markets</li>
                     <li>• Optimized signups and activation flow from landing pages and SEM campaigns to App SERP by 30%</li>
                     <li>• Implemented comprehensive marketing stack including SEO, SEM, and ASO</li>
                     <li>• Partnered with local go-to-market partners like employment agencies to improve market share</li>
                   </ul>
+                  <a 
+                    href="https://play.google.com/store/apps/details?id=com.jora.android&hl=en_AU"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex w-full items-center justify-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors"
+                  >
+                    Download Jora App
+                  </a>
                 </div>
               </div>
             </div>

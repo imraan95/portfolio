@@ -146,7 +146,7 @@ export default function Page() {
                   priority
                 />
               </div>
-              <h1 className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 tracking-tight fade-in delay-1 text-center px-4">
+              <h1 className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 tracking-tight fade-in delay-1 text-center px-4 text-white">
                 Imraan
               </h1>
               <div className="max-w-2xl text-center px-4">
