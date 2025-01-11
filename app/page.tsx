@@ -151,12 +151,11 @@ export default function Page() {
           <div className="hero-glow" />
           <div className="max-w-[1200px] mx-auto relative z-10">
             <div className="flex flex-col items-center mb-12">
-              <div className="w-48 h-48 rounded-full overflow-hidden mb-8 fade-in">
+              <div className="w-48 h-48 rounded-full overflow-hidden mb-8 fade-in relative">
                 <Image
                   src="/images/profile.jpg"
                   alt="Mohamed Imraan Iqbal"
-                  width={192}
-                  height={192}
+                  fill
                   className="object-cover"
                   priority
                 />
