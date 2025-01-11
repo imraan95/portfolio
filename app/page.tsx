@@ -166,19 +166,15 @@ export default function Page() {
               </h1>
               <div className="max-w-2xl text-center">
                 <p className="text-2xl text-white mb-4 fade-in delay-2">
-                  Product & Technology Leader
+                  Tech Product Leader
                 </p>
                 <p className="text-xl text-white mb-4 fade-in delay-2">
-                  Seasoned product leader with demonstrated success of launching and growing Digital SAAS, Fintech, Marketplace products.
+                  Digital SAAS, Fintech, Marketplace and Consumer products
                 </p>
                 <div className="flex justify-center gap-6 text-white mb-8 fade-in delay-2">
                   <span className="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     Melbourne, Australia
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5C2 7 4 5 6.5 5H18c2.2 0 4 1.8 4 4v8Z"/><polyline points="15,9 18,9 18,11"/><path d="M6.5 5C9 5 11 7 11 9.5V17a2 2 0 0 1-2 2v0"/><line x1="6" y1="10" x2="7" y2="10"/></svg>
-                    Permanent Resident
                   </span>
                 </div>
               </div>
@@ -195,6 +191,12 @@ export default function Page() {
                 </Link>
               </div>
             </div>
+          </div>
+          {/* Scroll Down Indicator */}
+          <div className="absolute bottom-8 right-8 animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white opacity-50">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
           </div>
         </section>
 
