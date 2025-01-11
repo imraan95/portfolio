@@ -38,7 +38,7 @@ export default function ResumePage() {
               <div className="lg:w-[70%] space-y-8">
                 {/* Experience Section */}
                 <section id="experience" className="scroll-animation">
-                  <h2 className="text-2xl font-bold mb-6 text-indigo-400">Professional Experience</h2>
+                  <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-pink-500 text-transparent bg-clip-text">Professional Experience</h2>
                   
                   <div className="space-y-8">
                     {/* Rome2Rio */}
@@ -85,7 +85,7 @@ export default function ResumePage() {
                               src="/images/mygigsters-logo.png"
                               alt="MyGigsters Logo"
                               fill
-                              className="object-contain p-1"
+                              className="object-contain p-2"
                             />
                           </div>
                           <div>
@@ -120,7 +120,7 @@ export default function ResumePage() {
                               src="/images/seek-logo.png"
                               alt="Seek Logo"
                               fill
-                              className="object-contain p-1"
+                              className="object-contain p-2"
                             />
                           </div>
                           <div>
@@ -149,10 +149,10 @@ export default function ResumePage() {
                         <div className="flex items-start gap-4">
                           <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
                             <Image
-                              src="/images/180dc-logo.png"
+                              src="/images/180-degrees-consulting.png"
                               alt="180 Degrees Consulting Logo"
                               fill
-                              className="object-contain p-1"
+                              className="object-contain p-2"
                             />
                           </div>
                           <div>
@@ -214,7 +214,7 @@ export default function ResumePage() {
               <div className="lg:w-[30%] space-y-8">
                 {/* Education Section */}
                 <section id="education" className="scroll-animation">
-                  <h2 className="text-2xl font-bold mb-6 text-indigo-400">Education</h2>
+                  <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-pink-500 text-transparent bg-clip-text">Education</h2>
                   <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                     <div className="mb-6">
                       <h3 className="text-lg font-semibold text-white">Master Of Business</h3>
@@ -236,7 +236,7 @@ export default function ResumePage() {
 
                 {/* Technical Skills Section */}
                 <section id="technical-skills" className="scroll-animation">
-                  <h2 className="text-2xl font-bold mb-6 text-indigo-400">Technical Skills</h2>
+                  <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-pink-500 text-transparent bg-clip-text">Technical Skills</h2>
                   <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                     <ul className="space-y-4">
                       <li>

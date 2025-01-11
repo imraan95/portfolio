@@ -56,7 +56,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-black text-white">
       <main className="py-4 md:py-8">
         <div className="max-w-[800px] mx-auto px-4 md:px-6">
-          <h1 className="text-3xl md:text-4xl font-bold mb-8 text-white">Get in Touch</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-8 text-white bg-gradient-to-r from-indigo-400 to-pink-500 text-transparent bg-clip-text">Get in Touch</h1>
           
           {/* Contact Links */}
           <div className="mb-12 space-y-4">
