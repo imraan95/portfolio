@@ -29,16 +29,6 @@ export default function Page() {
 
   return (
     <div className="flex flex-col min-h-screen bg-black text-foreground">
-      {/* Navigation */}
-      <header className="flex justify-end py-4 px-4 md:px-6 border-b border-neutral-800/50">
-        <nav className="flex flex-wrap justify-end items-center gap-3 md:gap-6">
-          <Link href="/" className="text-sm text-white hover:text-white/80 transition-colors">Home</Link>
-          <Link href="/portfolio" className="text-sm text-white hover:text-white/80 transition-colors">Portfolio</Link>
-          <Link href="/resume" className="text-sm text-white hover:text-white/80 transition-colors">Resume</Link>
-          <Link href="mailto:m.imraan95@gmail.com" className="text-sm text-white hover:text-white/80 transition-colors">Contact</Link>
-        </nav>
-      </header>
-
       <style jsx global>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }
@@ -171,6 +161,15 @@ export default function Page() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     Melbourne, Australia
                   </span>
+                </div>
+                {/* CTA Buttons */}
+                <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 fade-in delay-3">
+                  <Link href="/portfolio" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors">
+                    Check out my work
+                  </Link>
+                  <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-colors">
+                    Get in touch
+                  </Link>
                 </div>
               </div>
               <div className="flex justify-center space-x-4 fade-in delay-3">
