@@ -53,8 +53,8 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-foreground">
-      <main className="py-12 md:py-20">
+    <div className="min-h-screen bg-black text-white">
+      <main className="py-4 md:py-8">
         <div className="max-w-[800px] mx-auto px-4 md:px-6">
           <h1 className="text-3xl md:text-4xl font-bold mb-8 text-white">Get in Touch</h1>
           

@@ -26,10 +26,10 @@ export default function ResumePage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-foreground">
-      <main className="py-12 md:py-20">
+    <div className="min-h-screen bg-black text-white">
+      <main className="py-4 md:py-8">
         {/* Experience Section */}
-        <section id="experience" className="py-12 md:py-20 px-4 md:px-6">
+        <section id="experience" className="py-8 md:py-12 px-4 md:px-6">
           <div className="max-w-[1200px] mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 scroll-animation">Professional Experience</h2>
             

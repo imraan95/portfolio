@@ -26,23 +26,24 @@ export default function PortfolioPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-foreground">
-      <main className="py-12 md:py-20">
+    <div className="min-h-screen bg-black text-white">
+      <main className="py-4 md:py-8">
         <section className="px-4 md:px-6">
           <div className="max-w-[1200px] mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-12 scroll-animation">Portfolio</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-8 scroll-animation">Portfolio</h1>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {/* Rome2Rio Projects */}
               <div className="scroll-animation">
-                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+                <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800">
                   <h2 className="text-2xl font-semibold text-white mb-4">Marketplace Product</h2>
-                  <div className="h-[400px] relative mb-6 rounded-lg overflow-hidden">
+                  <div className="h-[300px] md:h-[400px] relative mb-6 rounded-lg overflow-hidden">
                     <Image
                       src="/images/rome2rio-marketplace.jpg"
                       alt="Rome2Rio Marketplace"
                       fill
-                      className="object-cover"
+                      className="object-cover object-[-100px_0]"
+                      priority
                     />
                   </div>
                   <p className="text-white mb-4">
@@ -59,10 +60,10 @@ export default function PortfolioPage() {
 
               {/* Fintech App Project */}
               <div className="scroll-animation scroll-delay-1">
-                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+                <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800">
                   <h2 className="text-2xl font-semibold text-white mb-4">Fintech Mobile App</h2>
-                  <div className="h-[400px] flex justify-center gap-4 mb-6">
-                    <div className="w-[185px] relative rounded-lg overflow-hidden">
+                  <div className="h-[300px] md:h-[400px] flex justify-center gap-4 mb-6">
+                    <div className="w-[140px] md:w-[185px] relative rounded-lg overflow-hidden">
                       <Image
                         src="/images/fintech-mobile-app-1.png"
                         alt="Fintech App Screenshot 1"
@@ -70,7 +71,7 @@ export default function PortfolioPage() {
                         className="object-contain"
                       />
                     </div>
-                    <div className="w-[185px] relative rounded-lg overflow-hidden">
+                    <div className="w-[140px] md:w-[185px] relative rounded-lg overflow-hidden">
                       <Image
                         src="/images/fintech-mobile-app-2.png"
                         alt="Fintech App Screenshot 2"
@@ -92,10 +93,10 @@ export default function PortfolioPage() {
 
               {/* Job App Marketing */}
               <div className="scroll-animation scroll-delay-2">
-                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+                <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800">
                   <h2 className="text-2xl font-semibold text-white mb-4">Job App - Marketing</h2>
-                  <div className="h-[400px] flex justify-center gap-4 mb-6">
-                    <div className="w-[185px] relative rounded-lg overflow-hidden">
+                  <div className="h-[300px] md:h-[400px] flex justify-center gap-4 mb-6">
+                    <div className="w-[140px] md:w-[185px] relative rounded-lg overflow-hidden">
                       <Image
                         src="/images/Job-App-Marketing-1.png"
                         alt="Job App Marketing Screenshot 1"
@@ -103,7 +104,7 @@ export default function PortfolioPage() {
                         className="object-contain"
                       />
                     </div>
-                    <div className="w-[185px] relative rounded-lg overflow-hidden">
+                    <div className="w-[140px] md:w-[185px] relative rounded-lg overflow-hidden">
                       <Image
                         src="/images/Job-App-Marketing-2.png"
                         alt="Job App Marketing Screenshot 2"
