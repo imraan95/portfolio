@@ -217,19 +217,43 @@ export default function ResumePage() {
                   <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-pink-500 text-transparent bg-clip-text">Education</h2>
                   <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                     <div className="mb-6">
-                      <h3 className="text-lg font-semibold text-white">Master Of Business</h3>
-                      <p className="text-pink-500">Monash University, Australia</p>
-                      <ul className="list-disc pl-5 mt-2 text-white">
-                        <li>Graduated in the top 2 percentile</li>
-                        <li>Dean's honor award</li>
-                      </ul>
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                          <Image
+                            src="/images/Master-of-Business.png"
+                            alt="Monash University Logo"
+                            fill
+                            className="object-contain p-1"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">Master Of Business</h3>
+                          <p className="text-pink-500">Monash University, Australia</p>
+                          <ul className="list-disc pl-5 mt-2 text-white">
+                            <li>Graduated in the top 2 percentile</li>
+                            <li>Dean's honor award</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-white">Bachelor of Technology in Information Technology</h3>
-                      <p className="text-pink-500">College of Engineering Guindy, Anna University, India</p>
-                      <ul className="list-disc pl-5 mt-2 text-white">
-                        <li>Graduated First Class at the oldest engineering institute in Asia.</li>
-                      </ul>
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                          <Image
+                            src="/images/Bachelor of IT.png"
+                            alt="Anna University Logo"
+                            fill
+                            className="object-contain p-1"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">Bachelor of Technology in Information Technology</h3>
+                          <p className="text-pink-500">College of Engineering Guindy, Anna University, India</p>
+                          <ul className="list-disc pl-5 mt-2 text-white">
+                            <li>Graduated First Class at the oldest engineering institute in Asia.</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </section>
