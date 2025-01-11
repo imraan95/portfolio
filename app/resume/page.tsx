@@ -45,12 +45,12 @@ export default function ResumePage() {
                     <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                       <div className="flex flex-col md:flex-row justify-between mb-4">
                         <div className="flex items-start gap-4">
-                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-neutral-900">
                             <Image
                               src="/images/rome2rio-logo.png"
                               alt="Rome2Rio Logo"
                               fill
-                              className="object-contain p-1"
+                              className="object-contain"
                             />
                           </div>
                           <div>
@@ -80,12 +80,12 @@ export default function ResumePage() {
                     <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                       <div className="flex flex-col md:flex-row justify-between mb-4">
                         <div className="flex items-start gap-4">
-                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-neutral-900">
                             <Image
                               src="/images/mygigsters-logo.png"
                               alt="MyGigsters Logo"
                               fill
-                              className="object-contain p-2"
+                              className="object-contain"
                             />
                           </div>
                           <div>
@@ -115,12 +115,12 @@ export default function ResumePage() {
                     <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                       <div className="flex flex-col md:flex-row justify-between mb-4">
                         <div className="flex items-start gap-4">
-                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-neutral-900">
                             <Image
                               src="/images/seek-logo.png"
                               alt="Seek Logo"
                               fill
-                              className="object-contain p-2"
+                              className="object-contain"
                             />
                           </div>
                           <div>
@@ -147,12 +147,12 @@ export default function ResumePage() {
                     <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                       <div className="flex flex-col md:flex-row justify-between mb-4">
                         <div className="flex items-start gap-4">
-                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-neutral-900">
                             <Image
                               src="/images/180-degrees-consulting.png"
                               alt="180 Degrees Consulting Logo"
                               fill
-                              className="object-contain p-2"
+                              className="object-contain"
                             />
                           </div>
                           <div>
@@ -179,12 +179,12 @@ export default function ResumePage() {
                     <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                       <div className="flex flex-col md:flex-row justify-between mb-4">
                         <div className="flex items-start gap-4">
-                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-neutral-900">
                             <Image
                               src="/images/freshworks-logo.png"
                               alt="Freshworks Logo"
                               fill
-                              className="object-contain p-1"
+                              className="object-contain"
                             />
                           </div>
                           <div>
@@ -218,12 +218,12 @@ export default function ResumePage() {
                   <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                     <div className="mb-6">
                       <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                        <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-neutral-900">
                           <Image
                             src="/images/Master-of-Business.png"
                             alt="Monash University Logo"
                             fill
-                            className="object-contain p-1"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -238,12 +238,12 @@ export default function ResumePage() {
                     </div>
                     <div>
                       <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                        <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-neutral-900">
                           <Image
                             src="/images/Bachelor of IT.png"
                             alt="Anna University Logo"
                             fill
-                            className="object-contain p-1"
+                            className="object-contain"
                           />
                         </div>
                         <div>
