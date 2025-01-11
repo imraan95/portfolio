@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { useEffect, useRef } from "react"
+import Image from "next/image"
 
 export default function ResumePage() {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -37,22 +38,32 @@ export default function ResumePage() {
               <div className="lg:w-[70%] space-y-8">
                 {/* Experience Section */}
                 <section id="experience" className="scroll-animation">
-                  <h2 className="text-2xl font-bold mb-6">Professional Experience</h2>
+                  <h2 className="text-2xl font-bold mb-6 text-indigo-400">Professional Experience</h2>
                   
                   <div className="space-y-8">
                     {/* Rome2Rio */}
-                    <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800">
+                    <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                       <div className="flex flex-col md:flex-row justify-between mb-4">
-                        <div>
-                          <h3 className="text-xl font-semibold text-white">PRODUCT MANAGER (Full Time)</h3>
-                          <p className="text-pink-500">
-                            <a href="https://www.rome2rio.com" target="_blank" className="hover:text-pink-400 transition-colors">
-                              Rome2Rio
-                            </a>
-                          </p>
-                          <p className="text-sm text-neutral-400">Travel marketplace with &gt;50 million monthly visits</p>
+                        <div className="flex items-start gap-4">
+                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                            <Image
+                              src="/images/rome2rio-logo.png"
+                              alt="Rome2Rio Logo"
+                              fill
+                              className="object-contain p-1"
+                            />
+                          </div>
+                          <div>
+                            <h3 className="text-xl font-semibold text-white">SENIOR PRODUCT MANAGER (Full Time)</h3>
+                            <p className="text-pink-500">
+                              <a href="https://www.rome2rio.com" target="_blank" className="hover:text-pink-400 transition-colors">
+                                Rome2Rio
+                              </a>
+                            </p>
+                            <p className="text-sm text-neutral-400">Travel marketplace with &gt;50 million monthly visits</p>
+                          </div>
                         </div>
-                        <p className="text-white">DEC 2022-Present</p>
+                        <p className="text-white mt-2 md:mt-0">DEC 2022-Present</p>
                       </div>
                       <ul className="list-disc pl-5 space-y-2 text-white">
                         <li>Owning the accommodation product line (web & app) including Acquisition, Engagement, Conversion and Retention</li>
@@ -66,18 +77,28 @@ export default function ResumePage() {
                     </div>
 
                     {/* MyGigsters */}
-                    <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800">
+                    <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                       <div className="flex flex-col md:flex-row justify-between mb-4">
-                        <div>
-                          <h3 className="text-xl font-semibold text-white">HEAD OF PRODUCT (Full Time)</h3>
-                          <p className="text-pink-500">
-                            <a href="https://mygigsters.com.au" target="_blank" className="hover:text-pink-400 transition-colors">
-                              MyGigsters
-                            </a>
-                          </p>
-                          <p className="text-sm text-neutral-400">Fintech Startup funded by the Australian Government</p>
+                        <div className="flex items-start gap-4">
+                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                            <Image
+                              src="/images/mygigsters-logo.png"
+                              alt="MyGigsters Logo"
+                              fill
+                              className="object-contain p-1"
+                            />
+                          </div>
+                          <div>
+                            <h3 className="text-xl font-semibold text-white">HEAD OF PRODUCT (Full Time)</h3>
+                            <p className="text-pink-500">
+                              <a href="https://mygigsters.com.au" target="_blank" className="hover:text-pink-400 transition-colors">
+                                MyGigsters
+                              </a>
+                            </p>
+                            <p className="text-sm text-neutral-400">Fintech Startup funded by the Australian Government</p>
+                          </div>
                         </div>
-                        <p className="text-white">NOV 2020 - DEC 2022</p>
+                        <p className="text-white mt-2 md:mt-0">NOV 2020 - DEC 2022</p>
                       </div>
                       <ul className="list-disc pl-5 space-y-2 text-white">
                         <li>Managed life cycles of 2 product lines - accounting product and an investment tool</li>
@@ -90,19 +111,61 @@ export default function ResumePage() {
                       </ul>
                     </div>
 
-                    {/* 180 Degrees Consulting */}
-                    <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800">
+                    {/* SEEK */}
+                    <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                       <div className="flex flex-col md:flex-row justify-between mb-4">
-                        <div>
-                          <h3 className="text-xl font-semibold text-white">CONSULTING PROJECT TEAM LEAD (Freelance contract)</h3>
-                          <p className="text-pink-500">
-                            <a href="https://180dc.org" target="_blank" className="hover:text-pink-400 transition-colors">
-                              180 Degrees Consulting
-                            </a>
-                          </p>
-                          <p className="text-sm text-neutral-400">Largest global consulting organisation for Not-for-Profits</p>
+                        <div className="flex items-start gap-4">
+                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                            <Image
+                              src="/images/seek-logo.png"
+                              alt="Seek Logo"
+                              fill
+                              className="object-contain p-1"
+                            />
+                          </div>
+                          <div>
+                            <h3 className="text-xl font-semibold text-white">PRODUCT MARKETING (Part time)</h3>
+                            <p className="text-pink-500">
+                              <a href="https://www.seek.com.au" target="_blank" className="hover:text-pink-400 transition-colors">
+                                Seek
+                              </a>
+                            </p>
+                            <p className="text-sm text-neutral-400">Global job search marketplace</p>
+                          </div>
                         </div>
-                        <p className="text-white">JULY 2020-OCT 2020</p>
+                        <p className="text-white mt-2 md:mt-0">JAN 2021-DEC 2022</p>
+                      </div>
+                      <ul className="list-disc pl-5 space-y-2 text-white">
+                        <li>Worked on Acquisition, Activation and Retention for Native apps across 36 countries - candidate apps (B2C)</li>
+                        <li>Managed monthly budgets of $200,000+ across marketing efforts and was accountable for P/L forecasting & reporting</li>
+                        <li>Worked on Paid channels, ASO, Email EDM marketing, Influencer marketing</li>
+                        <li>Worked with Apps product team on UAT, QA & Localisation to improve User Experience, user signup journey & ASO ranking</li>
+                      </ul>
+                    </div>
+
+                    {/* 180 Degrees Consulting */}
+                    <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
+                      <div className="flex flex-col md:flex-row justify-between mb-4">
+                        <div className="flex items-start gap-4">
+                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                            <Image
+                              src="/images/180dc-logo.png"
+                              alt="180 Degrees Consulting Logo"
+                              fill
+                              className="object-contain p-1"
+                            />
+                          </div>
+                          <div>
+                            <h3 className="text-xl font-semibold text-white">CONSULTING PROJECT TEAM LEAD (Freelance contract)</h3>
+                            <p className="text-pink-500">
+                              <a href="https://180dc.org" target="_blank" className="hover:text-pink-400 transition-colors">
+                                180 Degrees Consulting
+                              </a>
+                            </p>
+                            <p className="text-sm text-neutral-400">Largest global consulting organisation for Not-for-Profits</p>
+                          </div>
+                        </div>
+                        <p className="text-white mt-2 md:mt-0">JULY 2020-OCT 2020</p>
                       </div>
                       <ul className="list-disc pl-5 space-y-2 text-white">
                         <li>Working on financing the internationally reputed 'Project Dastaan' which advised by high-profile historians, film-makers and advocates including Malala Yousafzai, Gabo Arora, Suroosh Alvi, William Dalrymple</li>
@@ -113,46 +176,34 @@ export default function ResumePage() {
                     </div>
 
                     {/* Freshworks */}
-                    <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800">
+                    <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                       <div className="flex flex-col md:flex-row justify-between mb-4">
-                        <div>
-                          <h3 className="text-xl font-semibold text-white">BUSINESS ANALYST (Full Time)</h3>
-                          <p className="text-pink-500">
-                            <a href="https://www.freshworks.com" target="_blank" className="hover:text-pink-400 transition-colors">
-                              Freshworks Inc.
-                            </a>
-                          </p>
-                          <p className="text-sm text-neutral-400">US Based B2B SAAS Public Company</p>
+                        <div className="flex items-start gap-4">
+                          <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                            <Image
+                              src="/images/freshworks-logo.png"
+                              alt="Freshworks Logo"
+                              fill
+                              className="object-contain p-1"
+                            />
+                          </div>
+                          <div>
+                            <h3 className="text-xl font-semibold text-white">BUSINESS ANALYST (Full Time)</h3>
+                            <p className="text-pink-500">
+                              <a href="https://www.freshworks.com" target="_blank" className="hover:text-pink-400 transition-colors">
+                                Freshworks Inc.
+                              </a>
+                            </p>
+                            <p className="text-sm text-neutral-400">US Based B2B SAAS Public Company</p>
+                          </div>
                         </div>
-                        <p className="text-white">JULY 2017-JULY 2019</p>
+                        <p className="text-white mt-2 md:mt-0">JULY 2017-JULY 2019</p>
                       </div>
                       <ul className="list-disc pl-5 space-y-2 text-white">
                         <li>Helped the SAAS business scale in revenue through market analysis and insights</li>
                         <li>Worked on analysis of portfolio products namely Freshdesk (customer support tool) and Freshservice (ITSM tool)</li>
                         <li>Worked with Presales and Product Managers to identify pain points and strategize appropriate solutions</li>
                         <li>Worked with sales/revenue leadership on campaigns to drive marketing efforts for various regions of the US Market</li>
-                      </ul>
-                    </div>
-
-                    {/* SEEK */}
-                    <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800">
-                      <div className="flex flex-col md:flex-row justify-between mb-4">
-                        <div>
-                          <h3 className="text-xl font-semibold text-white">PRODUCT MARKETING (Part time)</h3>
-                          <p className="text-pink-500">
-                            <a href="https://www.seek.com.au" target="_blank" className="hover:text-pink-400 transition-colors">
-                              Seek
-                            </a>
-                          </p>
-                          <p className="text-sm text-neutral-400">Global job search marketplace</p>
-                        </div>
-                        <p className="text-white">JAN 2021-DEC 2022</p>
-                      </div>
-                      <ul className="list-disc pl-5 space-y-2 text-white">
-                        <li>Worked on Acquisition, Activation and Retention for Native apps across 36 countries - candidate apps (B2C)</li>
-                        <li>Managed monthly budgets of $200,000+ across marketing efforts and was accountable for P/L forecasting & reporting</li>
-                        <li>Worked on Paid channels, ASO, Email EDM marketing, Influencer marketing</li>
-                        <li>Worked with Apps product team on UAT, QA & Localisation to improve User Experience, user signup journey & ASO ranking</li>
                       </ul>
                     </div>
                   </div>
@@ -163,8 +214,8 @@ export default function ResumePage() {
               <div className="lg:w-[30%] space-y-8">
                 {/* Education Section */}
                 <section id="education" className="scroll-animation">
-                  <h2 className="text-2xl font-bold mb-6">Education</h2>
-                  <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800">
+                  <h2 className="text-2xl font-bold mb-6 text-indigo-400">Education</h2>
+                  <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                     <div className="mb-6">
                       <h3 className="text-lg font-semibold text-white">Master Of Business</h3>
                       <p className="text-pink-500">Monash University, Australia</p>
@@ -185,8 +236,8 @@ export default function ResumePage() {
 
                 {/* Technical Skills Section */}
                 <section id="technical-skills" className="scroll-animation">
-                  <h2 className="text-2xl font-bold mb-6">Technical Skills</h2>
-                  <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800">
+                  <h2 className="text-2xl font-bold mb-6 text-indigo-400">Technical Skills</h2>
+                  <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                     <ul className="space-y-4">
                       <li>
                         <h3 className="font-semibold text-pink-500">Project Management Stack:</h3>
