@@ -52,21 +52,32 @@ export default function PortfolioPage() {
                     <li>• Enhanced user experience with intuitive search and booking flow</li>
                     <li>• Implemented dynamic pricing and availability features</li>
                     <li>• Integrated multiple travel service providers</li>
+                    <li>• Improved conversions by 1.5x and improved Ads monetisation by 2x</li>
                   </ul>
                 </div>
               </div>
 
-              {/* MyGigsters Projects */}
+              {/* Fintech App Project */}
               <div className="scroll-animation scroll-delay-1">
                 <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
-                  <h2 className="text-2xl font-semibold text-white mb-4">MyGigsters Platform</h2>
-                  <div className="aspect-video relative mb-6 rounded-lg overflow-hidden">
-                    <Image
-                      src="/images/mygigsters.png"
-                      alt="MyGigsters Project"
-                      fill
-                      className="object-cover"
-                    />
+                  <h2 className="text-2xl font-semibold text-white mb-4">Fintech Mobile App</h2>
+                  <div className="flex gap-4 mb-6">
+                    <div className="flex-1 aspect-[9/19] relative rounded-lg overflow-hidden">
+                      <Image
+                        src="/images/fintech-mobile-app-1.png"
+                        alt="Fintech App Screenshot 1"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="flex-1 aspect-[9/19] relative rounded-lg overflow-hidden">
+                      <Image
+                        src="/images/fintech-mobile-app-2.png"
+                        alt="Fintech App Screenshot 2"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
                   </div>
                   <p className="text-white mb-4">
                     Developed and launched a comprehensive fintech platform for gig economy workers.
