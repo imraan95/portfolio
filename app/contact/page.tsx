@@ -9,12 +9,39 @@ export default function ContactPage() {
     subject: '',
     message: ''
   })
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Create mailto URL with form data
-    const mailtoUrl = `mailto:m.imraan95@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`From: ${formData.email}\n\n${formData.message}`)}`
-    window.location.href = mailtoUrl
+    setStatus('loading')
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to send email')
+      }
+
+      setStatus('success')
+      setFormData({ email: '', subject: '', message: '' })
+
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setStatus('idle')
+      }, 5000)
+    } catch (error) {
+      setStatus('error')
+      // Reset error message after 5 seconds
+      setTimeout(() => {
+        setStatus('idle')
+      }, 5000)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -69,7 +96,8 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
+                  disabled={status === 'loading'}
+                  className="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-pink-500 disabled:opacity-50"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -84,7 +112,8 @@ export default function ContactPage() {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
+                  disabled={status === 'loading'}
+                  className="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-pink-500 disabled:opacity-50"
                   placeholder="What's this about?"
                 />
               </div>
@@ -98,16 +127,28 @@ export default function ContactPage() {
                   value={formData.message}
                   onChange={handleChange}
                   required
+                  disabled={status === 'loading'}
                   rows={6}
-                  className="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
+                  className="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-pink-500 disabled:opacity-50"
                   placeholder="Your message here..."
                 />
               </div>
+              {status === 'success' && (
+                <div className="text-green-500 text-sm">
+                  Message sent successfully! I'll get back to you soon.
+                </div>
+              )}
+              {status === 'error' && (
+                <div className="text-red-500 text-sm">
+                  Failed to send message. Please try again or email me directly.
+                </div>
+              )}
               <button
                 type="submit"
-                className="w-full px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors"
+                disabled={status === 'loading'}
+                className="w-full px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {status === 'loading' ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
