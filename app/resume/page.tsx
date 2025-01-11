@@ -264,6 +264,10 @@ export default function ResumePage() {
                   <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                     <ul className="space-y-4">
                       <li>
+                        <h3 className="font-semibold text-pink-500">AI Tech Stack:</h3>
+                        <p className="text-white">Cursor AI, Replit</p>
+                      </li>
+                      <li>
                         <h3 className="font-semibold text-pink-500">Project Management Stack:</h3>
                         <p className="text-white">JIRA, Trello, Miro, Confluence, Notion, Asana</p>
                       </li>
