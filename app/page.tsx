@@ -153,7 +153,7 @@ export default function Page() {
             <div className="flex flex-col items-center mb-12">
               <div className="w-48 h-48 rounded-full overflow-hidden mb-8 fade-in relative">
                 <Image
-                  src="/images/profile.jpg"
+                  src="/images/Profile Pic.jpeg"
                   alt="Mohamed Imraan Iqbal"
                   fill
                   className="object-cover"
