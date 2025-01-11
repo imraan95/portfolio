@@ -38,7 +38,7 @@ export default function ResumePage() {
               <div className="lg:w-[70%] space-y-8">
                 {/* Experience Section */}
                 <section id="experience" className="scroll-animation">
-                  <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-pink-500 text-transparent bg-clip-text">Professional Experience</h2>
+                  <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-pink-500 text-transparent bg-clip-text">Professional Experience</h2>
                   
                   <div className="space-y-8">
                     {/* Rome2Rio */}
@@ -214,7 +214,7 @@ export default function ResumePage() {
               <div className="lg:w-[30%] space-y-8">
                 {/* Education Section */}
                 <section id="education" className="scroll-animation">
-                  <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-pink-500 text-transparent bg-clip-text">Education</h2>
+                  <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-pink-500 text-transparent bg-clip-text">Education</h2>
                   <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                     <div className="mb-6">
                       <div className="flex items-start gap-4">
@@ -260,7 +260,7 @@ export default function ResumePage() {
 
                 {/* Technical Skills Section */}
                 <section id="technical-skills" className="scroll-animation">
-                  <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-pink-500 text-transparent bg-clip-text">Technical Skills</h2>
+                  <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-pink-500 text-transparent bg-clip-text">Technical Skills</h2>
                   <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800 hover:border-indigo-900/50 transition-colors">
                     <ul className="space-y-4">
                       <li>
