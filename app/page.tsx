@@ -141,6 +141,7 @@ export default function Page() {
           <Link href="#experience" className="text-sm text-white hover:text-white/80 transition-colors">Experience</Link>
           <Link href="#education" className="text-sm text-white hover:text-white/80 transition-colors">Education</Link>
           <Link href="#skills" className="text-sm text-white hover:text-white/80 transition-colors">Skills</Link>
+          <Link href="#soft-skills" className="text-sm text-white hover:text-white/80 transition-colors">Soft Skills</Link>
           <Link href="mailto:m.imraan95@gmail.com" className="text-sm text-white hover:text-white/80 transition-colors">Contact</Link>
         </nav>
       </header>
@@ -317,32 +318,69 @@ export default function Page() {
             </div>
           </div>
         </section>
-      </main>
 
-      <footer className="py-8 px-6 border-t border-neutral-800/50 scroll-animation">
-        <div className="max-w-[1200px] mx-auto flex items-center justify-between">
-          <div className="text-sm text-white">
-            © 2024 Mohamed Imraan Iqbal. All rights reserved.
+        {/* Soft Skills Section */}
+        <section id="soft-skills" className="py-20 px-6 border-t border-neutral-800">
+          <div className="max-w-[1200px] mx-auto">
+            <h2 className="text-3xl font-bold mb-12 scroll-animation">Soft Skills</h2>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="scroll-animation">
+                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+                  <h3 className="text-xl font-semibold mb-4 text-white">Bias towards action</h3>
+                  <p className="text-white">Quick decision-making and proactive problem-solving approach</p>
+                </div>
+              </div>
+
+              <div className="scroll-animation scroll-delay-1">
+                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+                  <h3 className="text-xl font-semibold mb-4 text-white">Empathy</h3>
+                  <p className="text-white">Understanding and relating to team members and stakeholders</p>
+                </div>
+              </div>
+
+              <div className="scroll-animation scroll-delay-2">
+                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+                  <h3 className="text-xl font-semibold mb-4 text-white">Critical thinking</h3>
+                  <p className="text-white">Analytical approach to problem-solving and decision-making</p>
+                </div>
+              </div>
+
+              <div className="scroll-animation scroll-delay-3">
+                <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
+                  <h3 className="text-xl font-semibold mb-4 text-white">Motivated and driven</h3>
+                  <p className="text-white">Self-starter with a strong focus on achieving goals</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center gap-6">
-            <a href="mailto:m.imraan95@gmail.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
-              <span className="sr-only">Email</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/mohamed-imraan/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
-              <span className="sr-only">LinkedIn</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                <rect x="2" y="9" width="4" height="12"/>
-                <circle cx="4" cy="4" r="2"/>
-              </svg>
-            </a>
+        </section>
+
+        <footer className="py-8 px-6 border-t border-neutral-800/50 scroll-animation">
+          <div className="max-w-[1200px] mx-auto flex items-center justify-between">
+            <div className="text-sm text-white">
+              © 2024 Mohamed Imraan Iqbal. All rights reserved.
+            </div>
+            <div className="flex items-center gap-6">
+              <a href="mailto:m.imraan95@gmail.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
+                <span className="sr-only">Email</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/mohamed-imraan/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
+                <span className="sr-only">LinkedIn</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
-      </footer>
+        </footer>
+      </main>
     </div>
   )
 }
