@@ -47,7 +47,7 @@ export default function PortfolioPage() {
                     />
                   </div>
                   <p className="text-white mb-4">
-                    Led the development and optimization of Rome2Rio's marketplace product, focusing on hotel bookings and transportation options.
+                    Led Rome2rio's hotels marketplace product and monetisation products including Ads
                   </p>
                   <ul className="text-white space-y-2 mb-6">
                     <li>• Enhanced user experience with intuitive search and booking flow</li>
@@ -61,7 +61,7 @@ export default function PortfolioPage() {
                     rel="noopener noreferrer"
                     className="inline-flex w-full items-center justify-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors"
                   >
-                    Visit Rome2Rio
+                    View product
                   </a>
                 </div>
               </div>
@@ -70,22 +70,24 @@ export default function PortfolioPage() {
               <div className="scroll-animation scroll-delay-1">
                 <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800">
                   <h2 className="text-2xl font-semibold text-white mb-4">Fintech Mobile App</h2>
-                  <div className="h-[300px] md:h-[400px] flex justify-center gap-4 mb-6">
-                    <div className="w-[140px] md:w-[185px] relative rounded-lg overflow-hidden">
-                      <Image
-                        src="/images/fintech-mobile-app-1.png"
-                        alt="Fintech App Screenshot 1"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="w-[140px] md:w-[185px] relative rounded-lg overflow-hidden">
-                      <Image
-                        src="/images/fintech-mobile-app-2.png"
-                        alt="Fintech App Screenshot 2"
-                        fill
-                        className="object-contain"
-                      />
+                  <div className="h-[300px] md:h-[400px] relative mb-6 rounded-lg overflow-hidden">
+                    <div className="flex justify-center h-full">
+                      <div className="relative w-[185px] h-full">
+                        <Image
+                          src="/images/fintech-mobile-app-1.png"
+                          alt="Fintech App Screenshot 1"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <div className="relative w-[185px] h-full">
+                        <Image
+                          src="/images/fintech-mobile-app-2.png"
+                          alt="Fintech App Screenshot 2"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
                     </div>
                   </div>
                   <p className="text-white mb-4">
@@ -102,7 +104,7 @@ export default function PortfolioPage() {
                     rel="noopener noreferrer"
                     className="inline-flex w-full items-center justify-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors"
                   >
-                    Visit MyGigsters
+                    View product
                   </a>
                 </div>
               </div>
@@ -111,22 +113,24 @@ export default function PortfolioPage() {
               <div className="scroll-animation scroll-delay-2">
                 <div className="bg-neutral-900 p-6 md:p-8 rounded-xl border border-neutral-800">
                   <h2 className="text-2xl font-semibold text-white mb-4">Job App - Marketing</h2>
-                  <div className="h-[300px] md:h-[400px] flex justify-center gap-4 mb-6">
-                    <div className="w-[140px] md:w-[185px] relative rounded-lg overflow-hidden">
-                      <Image
-                        src="/images/Job-App-Marketing-1.png"
-                        alt="Job App Marketing Screenshot 1"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="w-[140px] md:w-[185px] relative rounded-lg overflow-hidden">
-                      <Image
-                        src="/images/Job-App-Marketing-2.png"
-                        alt="Job App Marketing Screenshot 2"
-                        fill
-                        className="object-contain"
-                      />
+                  <div className="h-[300px] md:h-[400px] relative mb-6 rounded-lg overflow-hidden">
+                    <div className="flex justify-center h-full">
+                      <div className="relative w-[185px] h-full">
+                        <Image
+                          src="/images/Job-App-Marketing-1.png"
+                          alt="Job App Marketing Screenshot 1"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <div className="relative w-[185px] h-full">
+                        <Image
+                          src="/images/Job-App-Marketing-2.png"
+                          alt="Job App Marketing Screenshot 2"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
                     </div>
                   </div>
                   <p className="text-white mb-4">
@@ -144,7 +148,7 @@ export default function PortfolioPage() {
                     rel="noopener noreferrer"
                     className="inline-flex w-full items-center justify-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors"
                   >
-                    Download Jora App
+                    View product
                   </a>
                 </div>
               </div>
