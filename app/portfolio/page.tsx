@@ -246,7 +246,7 @@ export default function PortfolioPage() {
                         rel="noopener noreferrer"
                       >
                         <Image
-                          src="/images/tax-hub.png"
+                          src="/images/Tax-hub.png"
                           alt="B2B CRM for Accountants"
                           fill
                           className="object-cover object-[-100px_0]"

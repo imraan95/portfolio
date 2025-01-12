@@ -36,7 +36,7 @@ export default function TaxHubPage() {
                 className="block w-full h-full"
               >
                 <Image
-                  src="/images/tax-hub.png"
+                  src="/images/Tax-hub.png"
                   alt="B2B CRM for Accountants"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
