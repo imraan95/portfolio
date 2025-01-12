@@ -48,8 +48,8 @@ export default function WebAdsPage() {
             {/* Project Details */}
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
-                <h2 className="text-xl font-semibold mb-3 text-pink-500">Scale</h2>
-                <p className="text-white/80">20% CTR Improvement</p>
+                <h2 className="text-xl font-semibold mb-3 text-pink-500">Business Scale</h2>
+                <p className="text-white/80">$50M</p>
               </div>
               <div>
                 <h2 className="text-xl font-semibold mb-3 text-pink-500">Impact</h2>
