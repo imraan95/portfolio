@@ -33,7 +33,7 @@ export default function JobAppPage() {
                 href="https://play.google.com/store/apps/details?id=com.jora.android"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative w-[250px] h-[500px] rounded-xl overflow-hidden"
+                className="relative w-[175px] h-[350px] rounded-xl overflow-hidden"
               >
                 <Image
                   src="/images/Job-App-Marketing-1.png"
@@ -47,7 +47,7 @@ export default function JobAppPage() {
                 href="https://play.google.com/store/apps/details?id=com.jora.android"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative w-[250px] h-[500px] rounded-xl overflow-hidden"
+                className="relative w-[175px] h-[350px] rounded-xl overflow-hidden"
               >
                 <Image
                   src="/images/Job-App-Marketing-2.png"

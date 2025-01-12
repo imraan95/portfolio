@@ -33,7 +33,7 @@ export default function FintechPage() {
                 href="https://mygigsters.com.au"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative w-[250px] h-[500px] rounded-xl overflow-hidden"
+                className="relative w-[175px] h-[350px] rounded-xl overflow-hidden"
               >
                 <Image
                   src="/images/fintech-mobile-app-1.png"
@@ -47,7 +47,7 @@ export default function FintechPage() {
                 href="https://mygigsters.com.au"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative w-[250px] h-[500px] rounded-xl overflow-hidden"
+                className="relative w-[175px] h-[350px] rounded-xl overflow-hidden"
               >
                 <Image
                   src="/images/fintech-mobile-app-2.png"

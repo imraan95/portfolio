@@ -28,7 +28,7 @@ export default function Rome2rioPage() {
             </div>
 
             {/* Project Image */}
-            <div className="relative h-[400px] md:h-[500px] mb-12 rounded-xl overflow-hidden">
+            <div className="relative h-[280px] md:h-[350px] mb-12 rounded-xl overflow-hidden">
               <a 
                 href="https://www.rome2rio.com/map/Melbourne/Amsterdam#h"
                 target="_blank"
