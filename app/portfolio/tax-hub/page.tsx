@@ -10,20 +10,13 @@ export default function TaxHubPage() {
         <div className="px-4 md:px-6">
           <div className="max-w-[1000px] mx-auto">
             {/* Breadcrumb Navigation */}
-            <nav className="mb-8">
-              <ol className="flex items-center space-x-2 text-sm text-white/60">
-                <li>
-                  <Link href="/" className="hover:text-white transition-colors">Home</Link>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <span>/</span>
-                  <Link href="/portfolio" className="hover:text-white transition-colors">Portfolio</Link>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <span>/</span>
-                  <span className="text-white">B2B CRM for Accountants</span>
-                </li>
-              </ol>
+            <nav className="flex items-center space-x-4 mb-8">
+              <Link href="/portfolio" className="inline-flex items-center text-white/80 hover:text-white group transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transform group-hover:-translate-x-1 transition-transform">
+                  <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+              </Link>
+              <h1 className="text-2xl font-bold text-white">B2B CRM for Accountants</h1>
             </nav>
 
             {/* Back Button */}
@@ -88,11 +81,15 @@ export default function TaxHubPage() {
                 <ul className="space-y-4 text-white/80">
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Partnered with 20x clientelle for user research and problem solving
+                    Partnered with 20 accountant clients for user research and problem solving
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Led a cross functional team of engineers and designers to launch a CRM platform. Platform included Bank sync API integrations that directly simplified tax books of clients
+                    Led a cross functional team of engineers and designers to launch a CRM platform
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-pink-500 mr-2">•</span>
+                    Platform included Bank sync API integrations that directly simplified tax books of clients
                   </li>
                 </ul>
               </div>

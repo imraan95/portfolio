@@ -53,104 +53,24 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white pt-20">
       <main className="py-4 md:py-8">
-        <div className="max-w-[800px] mx-auto px-4 md:px-6">
-          <h1 className="text-3xl md:text-4xl font-bold mb-8 text-white bg-gradient-to-r from-violet-600 via-fuchsia-500 to-pink-500 text-transparent bg-clip-text">Get in Touch</h1>
-          
-          {/* Contact Links */}
-          <div className="mb-12 space-y-4">
-            <div className="flex items-center gap-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-pink-500">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-              <Link href="mailto:m.imraan95@gmail.com" className="text-white hover:text-pink-500 transition-colors">
-                m.imraan95@gmail.com
-              </Link>
+        <div className="px-4 md:px-6">
+          <div className="max-w-[1200px] mx-auto">
+            <h1 className="text-3xl md:text-4xl font-bold mb-8 text-white">Contact</h1>
+            <div className="space-y-6">
+              <p className="text-xl text-white/80">
+                Feel free to reach out to me at:
+              </p>
+              <div className="space-y-4">
+                <a href="mailto:imraan.iqbal95@gmail.com" className="block text-white hover:text-pink-500 transition-colors">
+                  imraan.iqbal95@gmail.com
+                </a>
+                <a href="tel:+61420368580" className="block text-white hover:text-pink-500 transition-colors">
+                  +61 420 368 580
+                </a>
+              </div>
             </div>
-            <div className="flex items-center gap-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-pink-500">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                <rect width="4" height="12" x="2" y="9"/>
-                <circle cx="4" cy="4" r="2"/>
-              </svg>
-              <Link href="https://www.linkedin.com/in/mohamed-imraan/" target="_blank" className="text-white hover:text-pink-500 transition-colors">
-                LinkedIn Profile
-              </Link>
-            </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="bg-neutral-900 p-8 rounded-xl border border-neutral-800">
-            <h2 className="text-xl font-semibold mb-6 text-white">Send me a message</h2>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
-                  Your Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  disabled={status === 'loading'}
-                  className="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-pink-500 disabled:opacity-50"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  disabled={status === 'loading'}
-                  className="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-pink-500 disabled:opacity-50"
-                  placeholder="What's this about?"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  disabled={status === 'loading'}
-                  rows={6}
-                  className="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-pink-500 disabled:opacity-50"
-                  placeholder="Your message here..."
-                />
-              </div>
-              {status === 'success' && (
-                <div className="text-green-500 text-sm">
-                  Message sent successfully! I'll get back to you soon.
-                </div>
-              )}
-              {status === 'error' && (
-                <div className="text-red-500 text-sm">
-                  Failed to send message. Please try again or email me directly.
-                </div>
-              )}
-              <button
-                type="submit"
-                disabled={status === 'loading'}
-                className="w-full px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {status === 'loading' ? 'Sending...' : 'Send Message'}
-              </button>
-            </form>
           </div>
         </div>
       </main>

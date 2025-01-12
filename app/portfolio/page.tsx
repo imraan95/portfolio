@@ -103,7 +103,7 @@ export default function PortfolioPage() {
                       <p className="text-white/90">Diversify revenue share from transport revenue stream</p>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-pink-500">How</h3>
+                      <h3 className="font-semibold text-pink-500">What I did</h3>
                       <p className="text-white/90">Click to find out</p>
                     </div>
                     <div>
@@ -144,7 +144,7 @@ export default function PortfolioPage() {
                       <p className="text-white/90">How might we help gig workers be more financially secure</p>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-pink-500">How</h3>
+                      <h3 className="font-semibold text-pink-500">What I did</h3>
                       <p className="text-white/90">Click to find out</p>
                     </div>
                     <div>
@@ -182,7 +182,7 @@ export default function PortfolioPage() {
                       <p className="text-white/90">How do we better help accountants manage their clients and lodge their clients' tax returns</p>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-pink-500">How</h3>
+                      <h3 className="font-semibold text-pink-500">What I did</h3>
                       <p className="text-white/90">Click to find out</p>
                     </div>
                     <div>
@@ -220,7 +220,7 @@ export default function PortfolioPage() {
                       <p className="text-white/90">How to improve ad relevance and performance</p>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-pink-500">How</h3>
+                      <h3 className="font-semibold text-pink-500">What I did</h3>
                       <p className="text-white/90">Click to find out</p>
                     </div>
                     <div>
@@ -261,7 +261,7 @@ export default function PortfolioPage() {
                       <p className="text-white/90">Penetrate new markets within Asia and protect market share of group from growing competitor</p>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-pink-500">How</h3>
+                      <h3 className="font-semibold text-pink-500">What I did</h3>
                       <p className="text-white/90">Click to find out</p>
                     </div>
                     <div>
