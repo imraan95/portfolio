@@ -31,7 +31,7 @@ export default function TaxHubPage() {
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2 transform group-hover:-translate-x-1 transition-transform">
                 <path d="M19 12H5M12 19l-7-7 7-7"/>
               </svg>
-              Back to Portfolio
+              <span className="hidden md:inline">Back to Portfolio</span>
             </Link>
 
             {/* Project Header */}
@@ -88,15 +88,11 @@ export default function TaxHubPage() {
                 <ul className="space-y-4 text-white/80">
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Researched the market, data and users
+                    Partnered with 20x clientelle for user research and problem solving
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Strategised creating a CRM product for accountants, setup a team and launched the product
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Optimised the experience through growth experiments across the funnel including acquiring traffic, activation rate onsite, and conversion rate
+                    Led a cross functional team of engineers and designers to launch a CRM platform. Platform included Bank sync API integrations that directly simplified tax books of clients
                   </li>
                 </ul>
               </div>
@@ -104,7 +100,7 @@ export default function TaxHubPage() {
               <div>
                 <h2 className="text-2xl font-semibold mb-4 text-white">What Happened</h2>
                 <p className="text-white/80 leading-relaxed">
-                  Launched MVP, onboarded 20 clients
+                  Doubled accountant productivity and reduced manhours greatly. Helped pitch seed fundraising
                 </p>
               </div>
             </div>

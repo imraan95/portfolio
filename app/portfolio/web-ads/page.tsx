@@ -8,13 +8,13 @@ export default function WebAdsPage() {
     <div className="min-h-screen bg-black text-white">
       <main className="py-4 md:py-8">
         <div className="px-4 md:px-6">
-          <div className="max-w-[1000px] mx-auto">
+          <div className="max-w-[1200px] mx-auto">
             {/* Back Button */}
             <Link href="/portfolio" className="inline-flex items-center text-white/80 hover:text-white mb-8 group transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2 transform group-hover:-translate-x-1 transition-transform">
                 <path d="M19 12H5M12 19l-7-7 7-7"/>
               </svg>
-              Back to Portfolio
+              <span className="hidden md:inline">Back to Portfolio</span>
             </Link>
 
             {/* Project Header */}
