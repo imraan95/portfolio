@@ -97,15 +97,20 @@ export default function PortfolioPage() {
                       />
                     </div>
                   </div>
-                  <p className="text-white/90 mb-4">
-                    Led Rome2rio's hotels marketplace product and monetisation products including Ads
-                  </p>
-                  <ul className="text-white/80 space-y-2 mb-6">
-                    <li>• Enhanced user experience with intuitive search and booking flow</li>
-                    <li>• Implemented dynamic pricing and availability features</li>
-                    <li>• Integrated multiple travel service providers</li>
-                    <li>• Improved conversions by 1.5x and improved Ads monetisation by 2x</li>
-                  </ul>
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="font-semibold text-pink-500">Problem</h3>
+                      <p className="text-white/90">Diversify revenue share from transport revenue stream</p>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-pink-500">How</h3>
+                      <p className="text-white/90">Click to find out</p>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-pink-500">Spoiler</h3>
+                      <p className="text-white/90">Improved cross-sell rev share by 1.5x</p>
+                    </div>
+                  </div>
                 </div>
               </Link>
 
@@ -133,14 +138,20 @@ export default function PortfolioPage() {
                       </div>
                     </div>
                   </div>
-                  <p className="text-white/90 mb-4">
-                    Developed and launched a comprehensive fintech platform for gig economy workers.
-                  </p>
-                  <ul className="text-white/80 space-y-2 mb-6">
-                    <li>• Built and launched MVP in 2 months</li>
-                    <li>• Achieved 90% month-over-month growth</li>
-                    <li>• Successfully raised pre-seed funding</li>
-                  </ul>
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="font-semibold text-pink-500">Problem</h3>
+                      <p className="text-white/90">How might we help gig workers be more financially secure</p>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-pink-500">How</h3>
+                      <p className="text-white/90">Click to find out</p>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-pink-500">Spoiler</h3>
+                      <p className="text-white/90">Launched product; Had a growth rate of 90% MoM; raised seed round</p>
+                    </div>
+                  </div>
                 </div>
               </Link>
 
@@ -168,15 +179,20 @@ export default function PortfolioPage() {
                       </div>
                     </div>
                   </div>
-                  <p className="text-white/90 mb-4">
-                    Led comprehensive growth and marketing initiatives for Jora App across Asian markets.
-                  </p>
-                  <ul className="text-white/80 space-y-2 mb-6">
-                    <li>• Led Jora App growth across Asia, focusing on user acquisition across 36 markets</li>
-                    <li>• Optimized signups and activation flow from landing pages and SEM campaigns to App SERP by 30%</li>
-                    <li>• Implemented comprehensive marketing stack including SEO, SEM, and ASO</li>
-                    <li>• Partnered with local go-to-market partners like employment agencies to improve market share</li>
-                  </ul>
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="font-semibold text-pink-500">Problem</h3>
+                      <p className="text-white/90">Penetrate new markets within Asia and protect market share of group from growing competitor</p>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-pink-500">How</h3>
+                      <p className="text-white/90">Click to find out</p>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-pink-500">Spoiler</h3>
+                      <p className="text-white/90">Improved brand positioning and GTM market share by 30% in new markets</p>
+                    </div>
+                  </div>
                 </div>
               </Link>
             </div>
