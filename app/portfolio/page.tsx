@@ -25,7 +25,7 @@ export default function PortfolioPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white pt-20">
+    <div className="min-h-screen bg-black text-white pt-16 md:pt-20">
       <style jsx global>{`
         .portfolio-card {
           background: linear-gradient(145deg, #1E1E2F 0%, #111827 100%);
@@ -149,7 +149,7 @@ export default function PortfolioPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-pink-500">Spoiler</h3>
-                      <p className="text-white/90">Launched product; Had a growth rate of 90% MoM; raised seed round</p>
+                      <p className="text-white/90">Had a growth rate of 90% MoM; raised seed round</p>
                     </div>
                   </div>
                 </div>

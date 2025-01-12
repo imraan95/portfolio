@@ -23,7 +23,7 @@ export default function LearningsPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white pt-20">
+    <div className="min-h-screen bg-black text-white pt-16 md:pt-20">
       <main className="py-4 md:py-8">
         <div className="px-4 md:px-6">
           <div className="max-w-[1200px] mx-auto">
