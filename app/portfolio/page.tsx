@@ -25,7 +25,7 @@ export default function PortfolioPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white pt-20">
       <style jsx global>{`
         .portfolio-card {
           background: linear-gradient(145deg, #1E1E2F 0%, #111827 100%);
@@ -77,11 +77,11 @@ export default function PortfolioPage() {
       `}</style>
 
       <main className="py-4 md:py-8">
-        <section className="px-4 md:px-6">
+        <div className="px-4 md:px-6">
           <div className="max-w-[1200px] mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-8 scroll-animation text-white">Portfolio</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-8 text-white">Portfolio</h1>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-8">
               {/* Rome2Rio Projects */}
               <Link href="/portfolio/rome2rio" className="block">
                 <div className="portfolio-card gradient-border p-6 md:p-8 rounded-xl border border-neutral-800/20 hover:border-transparent transition-colors">
@@ -273,7 +273,7 @@ export default function PortfolioPage() {
               </Link>
             </div>
           </div>
-        </section>
+        </div>
       </main>
     </div>
   )
