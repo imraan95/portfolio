@@ -74,54 +74,35 @@ export default function JobAppPage() {
             {/* Project Description */}
             <div className="space-y-8 mb-12">
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-white">Project Overview</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-white">Problem</h2>
                 <p className="text-white/80 leading-relaxed">
-                  Led comprehensive growth and marketing initiatives for Jora's mobile app across Asian markets, focusing on user acquisition, activation, and retention strategies. Managed substantial marketing budgets and implemented multi-channel marketing campaigns.
+                  How might we penetrate new markets within Asia and protect market share of group from growing competitor
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-white">Key Achievements</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-white">What I Did</h2>
                 <ul className="space-y-4 text-white/80">
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Led app growth across 36 markets in Asia, significantly expanding user base
+                    Researched the market, data and users
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Optimized signup and activation flow, improving conversion rates by 30%
+                    Strategised creating a GTM strategy for new markets, setup a team and launched the product
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Managed monthly marketing budgets exceeding $200,000
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Successfully established partnerships with local employment agencies
+                    Optimised the experience through growth experiments across the funnel including acquiring traffic, activation rate onsite, and conversion rate
                   </li>
                 </ul>
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-white">Marketing Strategy</h2>
-                <ul className="space-y-4 text-white/80">
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Implemented comprehensive marketing stack including SEO, SEM, and ASO
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Developed and executed email EDM marketing campaigns
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Coordinated influencer marketing initiatives
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Enhanced user experience through improved localization
-                  </li>
-                </ul>
+                <h2 className="text-2xl font-semibold mb-4 text-white">What Happened</h2>
+                <p className="text-white/80 leading-relaxed">
+                  Improved brand positioning and GTM market share by 30% in new markets
+                </p>
               </div>
             </div>
 

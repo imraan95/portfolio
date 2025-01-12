@@ -18,17 +18,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/images/rocket-favicon.ico" />
+        <link rel="icon" href="/images/rocket-favicon.png" />
       </head>
       <body className={inter.className}>
         <div className="flex flex-col min-h-screen bg-black text-foreground">
           {/* Navigation */}
-          <header className="flex justify-end py-4 px-4 md:px-6 border-b border-neutral-800/50">
-            <nav className="flex flex-wrap justify-end items-center gap-3 md:gap-6">
-              <Link href="/" className="text-sm text-white hover:text-white/80 transition-colors">Home</Link>
-              <Link href="/portfolio" className="text-sm text-white hover:text-white/80 transition-colors">Portfolio</Link>
-              <Link href="/resume" className="text-sm text-white hover:text-white/80 transition-colors">Resume</Link>
-              <Link href="/contact" className="text-sm text-white hover:text-white/80 transition-colors">Contact</Link>
+          <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+            <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex justify-between h-16">
+                <div className="flex space-x-8 md:space-x-12">
+                  <Link href="/" className="inline-flex items-center px-1 pt-1 text-sm font-medium text-white hover:text-pink-500 transition-colors">
+                    Home
+                  </Link>
+                  <Link href="/portfolio" className="inline-flex items-center px-1 pt-1 text-sm font-medium text-white hover:text-pink-500 transition-colors">
+                    Portfolio
+                  </Link>
+                  <Link href="/learnings" className="inline-flex items-center px-1 pt-1 text-sm font-medium text-white hover:text-pink-500 transition-colors">
+                    Learnings
+                  </Link>
+                  <Link href="/contact" className="inline-flex items-center px-1 pt-1 text-sm font-medium text-white hover:text-pink-500 transition-colors">
+                    Contact
+                  </Link>
+                </div>
+              </div>
             </nav>
           </header>
           {children}

@@ -60,50 +60,35 @@ export default function TaxHubPage() {
             {/* Project Description */}
             <div className="space-y-8 mb-12">
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-white">Project Overview</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-white">Problem</h2>
                 <p className="text-white/80 leading-relaxed">
-                  Developed a comprehensive CRM solution specifically designed for accountants to streamline their client management and tax lodgment processes, improving efficiency and client service delivery.
+                  How might we help accountants be more efficient and productive with their client management
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-white">Key Achievements</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-white">What I Did</h2>
                 <ul className="space-y-4 text-white/80">
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Successfully launched MVP with core features for client management
+                    Researched the market, data and users
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Onboarded 20 accounting firms as early adopters
+                    Strategised creating a CRM product for accountants, setup a team and launched the product
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Implemented automated tax lodgment workflows
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Developed client communication and document management features
+                    Optimised the experience through growth experiments across the funnel including acquiring traffic, activation rate onsite, and conversion rate
                   </li>
                 </ul>
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-white">Technical Implementation</h2>
-                <ul className="space-y-4 text-white/80">
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Built secure document storage and sharing system
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Integrated with tax lodgment systems
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Implemented client portal for document submission
-                  </li>
-                </ul>
+                <h2 className="text-2xl font-semibold mb-4 text-white">What Happened</h2>
+                <p className="text-white/80 leading-relaxed">
+                  Launched MVP, onboarded 20 clients
+                </p>
               </div>
             </div>
           </div>

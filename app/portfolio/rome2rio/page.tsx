@@ -60,54 +60,35 @@ export default function Rome2rioPage() {
             {/* Project Description */}
             <div className="space-y-8 mb-12">
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-white">Project Overview</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-white">Problem</h2>
                 <p className="text-white/80 leading-relaxed">
-                  Led the development and optimization of Rome2rio's hotels marketplace product, focusing on enhancing user experience and improving monetization through strategic product improvements and data-driven decision making.
+                  How might we diversify our revenue stream and lower our transport bookings reliance which is hitting a plateau for growth
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-white">Key Achievements</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-white">What I Did</h2>
                 <ul className="space-y-4 text-white/80">
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Enhanced user experience with intuitive search and booking flow, resulting in improved user engagement metrics
+                    Researched the market, data and users
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Implemented dynamic pricing and availability features to optimize revenue generation
+                    Strategised creating an accommodation onsite experience, setup a team and launched the product
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Successfully integrated multiple travel service providers, expanding the marketplace offerings
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Improved conversions by 1.5x through continuous optimization and A/B testing
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Enhanced Ads monetization by 2x through strategic placement and targeting improvements
+                    Optimised the experience through growth experiments across the funnel including acquiring traffic, activation rate onsite, and conversion rate
                   </li>
                 </ul>
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-white">Project Challenges</h2>
-                <ul className="space-y-4 text-white/80">
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Integrating multiple service providers while maintaining a consistent user experience
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Optimizing the booking flow to reduce friction and improve conversion rates
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Balancing user experience with monetization goals
-                  </li>
-                </ul>
+                <h2 className="text-2xl font-semibold mb-4 text-white">What Happened</h2>
+                <p className="text-white/80 leading-relaxed">
+                  Improve revenue per share from accom by 1.5x, added +20M in annual net revenue. Consulted to duplicate the same accom experience success for parent group omio.com
+                </p>
               </div>
             </div>
 

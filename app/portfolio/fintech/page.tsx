@@ -74,50 +74,35 @@ export default function FintechPage() {
             {/* Project Description */}
             <div className="space-y-8 mb-12">
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-white">Project Overview</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-white">Problem</h2>
                 <p className="text-white/80 leading-relaxed">
-                  Led the development and launch of a comprehensive fintech platform designed specifically for gig economy workers. The platform includes an accounting product and an investment tool, providing essential financial services to independent workers.
+                  How might we help gig workers be more financially secure and have access to financial products
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-white">Key Achievements</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-white">What I Did</h2>
                 <ul className="space-y-4 text-white/80">
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Launched MVP in less than 2 months through lean agile sprints and user interviews
+                    Researched the market, data and users
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Achieved 90% month-over-month growth with a 40% retention rate
+                    Strategised creating a fintech product for gig workers, setup a team and launched the product
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Successfully raised pre-seed funding from top VCs including Startmate & Antler
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Built and managed a remote cross-functional team of 13 members
+                    Optimised the experience through growth experiments across the funnel including acquiring traffic, activation rate onsite, and conversion rate
                   </li>
                 </ul>
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-white">Technical Implementation</h2>
-                <ul className="space-y-4 text-white/80">
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Implemented a scalable and secure API infrastructure
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Set up comprehensive analytics stack to track user journey
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">•</span>
-                    Integrated multiple financial service providers
-                  </li>
-                </ul>
+                <h2 className="text-2xl font-semibold mb-4 text-white">What Happened</h2>
+                <p className="text-white/80 leading-relaxed">
+                  Launched product, had a growth rate of 90% MoM, raised seed round
+                </p>
               </div>
             </div>
 
