@@ -29,24 +29,34 @@ export default function JobAppPage() {
 
             {/* Project Images */}
             <div className="flex justify-center gap-8 mb-12">
-              <div className="relative w-[250px] h-[500px] rounded-xl overflow-hidden">
+              <a 
+                href="https://play.google.com/store/apps/details?id=com.jora.android"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative w-[250px] h-[500px] rounded-xl overflow-hidden"
+              >
                 <Image
                   src="/images/Job-App-Marketing-1.png"
                   alt="Job App Screenshot 1"
                   fill
-                  className="object-contain"
+                  className="object-contain hover:scale-105 transition-transform duration-500"
                   priority
                 />
-              </div>
-              <div className="relative w-[250px] h-[500px] rounded-xl overflow-hidden">
+              </a>
+              <a 
+                href="https://play.google.com/store/apps/details?id=com.jora.android"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative w-[250px] h-[500px] rounded-xl overflow-hidden"
+              >
                 <Image
                   src="/images/Job-App-Marketing-2.png"
                   alt="Job App Screenshot 2"
                   fill
-                  className="object-contain"
+                  className="object-contain hover:scale-105 transition-transform duration-500"
                   priority
                 />
-              </div>
+              </a>
             </div>
 
             {/* Project Details */}

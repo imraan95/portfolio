@@ -195,6 +195,38 @@ export default function PortfolioPage() {
                   </div>
                 </div>
               </Link>
+
+              {/* Web App Ads Product */}
+              <Link href="/portfolio/web-ads" className="block">
+                <div className="portfolio-card gradient-border p-6 md:p-8 rounded-xl border border-neutral-800/20 hover:border-transparent transition-colors">
+                  <h2 className="card-title text-2xl font-semibold mb-4 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-pink-500 text-transparent bg-clip-text">Web App Ads Product</h2>
+                  <div className="h-[300px] md:h-[400px] relative mb-6 rounded-lg overflow-hidden">
+                    <div className="card-image w-full h-full relative">
+                      <Image
+                        src="/images/web-ads-product.jpg"
+                        alt="Web App Ads Product"
+                        fill
+                        className="object-cover object-[-100px_0]"
+                        priority
+                      />
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="font-semibold text-pink-500">Problem</h3>
+                      <p className="text-white/90">How to improve ad relevance and performance</p>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-pink-500">How</h3>
+                      <p className="text-white/90">Click to find out</p>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-pink-500">Spoiler</h3>
+                      <p className="text-white/90">Achieved 20% CTR improvement through innovative solutions</p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </section>
