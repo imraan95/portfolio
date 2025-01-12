@@ -9,6 +9,23 @@ export default function FintechPage() {
       <main className="py-4 md:py-8">
         <div className="px-4 md:px-6">
           <div className="max-w-[1000px] mx-auto">
+            {/* Breadcrumb Navigation */}
+            <nav className="mb-8">
+              <ol className="flex items-center space-x-2 text-sm text-white/60">
+                <li>
+                  <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span>/</span>
+                  <Link href="/portfolio" className="hover:text-white transition-colors">Portfolio</Link>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span>/</span>
+                  <span className="text-white">Fintech Mobile App</span>
+                </li>
+              </ol>
+            </nav>
+
             {/* Back Button */}
             <Link href="/portfolio" className="inline-flex items-center text-white/80 hover:text-white mb-8 group transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2 transform group-hover:-translate-x-1 transition-transform">
@@ -76,7 +93,7 @@ export default function FintechPage() {
               <div>
                 <h2 className="text-2xl font-semibold mb-4 text-white">Problem</h2>
                 <p className="text-white/80 leading-relaxed">
-                  How might we help gig workers be more financially secure and have access to financial products
+                  How might we enable gig workers who do not have the legal protections of regular salaried employees be more financially secure
                 </p>
               </div>
 
@@ -85,15 +102,15 @@ export default function FintechPage() {
                 <ul className="space-y-4 text-white/80">
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Researched the market, data and users
+                    Strategised MVP feature to solve the problem including Bank account sync for tax benefits, mileage tracking, and early pay features
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Strategised creating a fintech product for gig workers, setup a team and launched the product
+                    Hired a remote product and marketing team to bring founder's vision to life
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Optimised the experience through growth experiments across the funnel including acquiring traffic, activation rate onsite, and conversion rate
+                    Setup analytics stack to bring 'data' to each idea and vision
                   </li>
                 </ul>
               </div>
@@ -101,7 +118,7 @@ export default function FintechPage() {
               <div>
                 <h2 className="text-2xl font-semibold mb-4 text-white">What Happened</h2>
                 <p className="text-white/80 leading-relaxed">
-                  Strategised MVP feature to solve the problem including Bank account sync for tax benefits, mileage tracking, and early pay features. Hired a remote product and marketing team to bring founder's vision to life. Setup analytics stack to bring 'data' to each idea and vision
+                  Grew 90% MoM. Raised pre seed round from top Aussie VCs like Startmate, Antler and the Vic state government
                 </p>
               </div>
             </div>
