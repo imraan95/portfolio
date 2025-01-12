@@ -33,7 +33,7 @@ export default function HomePage() {
         <div className="max-w-[800px] mx-auto px-4 md:px-6 text-center">
           <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden relative">
             <Image
-              src="/images/profile.jpg"
+              src="/images/Profile Pic.jpeg"
               alt="Imraan"
               fill
               className="object-cover"
