@@ -296,8 +296,9 @@ export default function ResumePage() {
             {/* Download Resume Button */}
             <div className="mt-16 mb-8 flex justify-center">
               <a 
-                href="/Mohamed_Imraan_Resume.pdf" 
-                download
+                href="https://drive.google.com/uc?export=download&id=1eLTAv6JNU10vqfP1xCPlVAU2sqD26Yl4X9RlBY4UNMc"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors"
               >
                 <svg 
