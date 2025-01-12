@@ -20,7 +20,7 @@ export default function WebAdsPage() {
             {/* Project Header */}
             <div className="mb-12">
               <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-pink-500 text-transparent bg-clip-text">
-                Web App Ads Product
+                Ads Product - Web App
               </h1>
               <p className="text-xl text-white/80 mb-6">
                 Enhancing ad relevance and performance for improved monetization
@@ -29,28 +29,31 @@ export default function WebAdsPage() {
 
             {/* Project Image */}
             <div className="relative h-[400px] md:h-[500px] mb-12 rounded-xl overflow-hidden">
-              <Image
-                src="/images/web-ads-product.jpg"
-                alt="Web App Ads Product"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-                priority
-              />
+              <a 
+                href="https://www.rome2rio.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full h-full"
+              >
+                <Image
+                  src="/images/Ads-product.png"
+                  alt="Web App Ads Product"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  priority
+                />
+              </a>
             </div>
 
             {/* Project Details */}
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
-                <h2 className="text-xl font-semibold mb-3 text-pink-500">Role</h2>
-                <p className="text-white/80">Product Manager</p>
+                <h2 className="text-xl font-semibold mb-3 text-pink-500">Scale</h2>
+                <p className="text-white/80">20% CTR Improvement</p>
               </div>
               <div>
                 <h2 className="text-xl font-semibold mb-3 text-pink-500">Impact</h2>
                 <p className="text-white/80">20% CTR Improvement</p>
-              </div>
-              <div>
-                <h2 className="text-xl font-semibold mb-3 text-pink-500">Focus Areas</h2>
-                <p className="text-white/80">Ad Relevance, Performance, Monetization</p>
               </div>
             </div>
 

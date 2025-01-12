@@ -199,16 +199,22 @@ export default function PortfolioPage() {
               {/* Web App Ads Product */}
               <Link href="/portfolio/web-ads" className="block">
                 <div className="portfolio-card gradient-border p-6 md:p-8 rounded-xl border border-neutral-800/20 hover:border-transparent transition-colors">
-                  <h2 className="card-title text-2xl font-semibold mb-4 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-pink-500 text-transparent bg-clip-text">Web App Ads Product</h2>
+                  <h2 className="card-title text-2xl font-semibold mb-4 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-pink-500 text-transparent bg-clip-text">Ads Product - Web App</h2>
                   <div className="h-[300px] md:h-[400px] relative mb-6 rounded-lg overflow-hidden">
                     <div className="card-image w-full h-full relative">
-                      <Image
-                        src="/images/web-ads-product.jpg"
-                        alt="Web App Ads Product"
-                        fill
-                        className="object-cover object-[-100px_0]"
-                        priority
-                      />
+                      <a 
+                        href="https://www.rome2rio.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src="/images/Ads-product.png"
+                          alt="Web App Ads Product"
+                          fill
+                          className="object-cover object-[-100px_0]"
+                          priority
+                        />
+                      </a>
                     </div>
                   </div>
                   <div className="space-y-4">
@@ -222,7 +228,7 @@ export default function PortfolioPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-pink-500">Spoiler</h3>
-                      <p className="text-white/90">Achieved 20% CTR improvement through innovative solutions</p>
+                      <p className="text-white/90">Introduced sponsored listings ad strategy; Achieved 20% CTR improvement</p>
                     </div>
                   </div>
                 </div>

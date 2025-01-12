@@ -62,8 +62,8 @@ export default function JobAppPage() {
             {/* Project Details */}
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div>
-                <h2 className="text-xl font-semibold mb-3 text-pink-500">Role</h2>
-                <p className="text-white/80">Product Marketing</p>
+                <h2 className="text-xl font-semibold mb-3 text-pink-500">Scale</h2>
+                <p className="text-white/80">$5M</p>
               </div>
               <div>
                 <h2 className="text-xl font-semibold mb-3 text-pink-500">Timeline</h2>
