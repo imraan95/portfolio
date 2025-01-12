@@ -233,6 +233,44 @@ export default function PortfolioPage() {
                   </div>
                 </div>
               </Link>
+
+              {/* B2B CRM for Accountants */}
+              <Link href="/portfolio/tax-hub" className="block">
+                <div className="portfolio-card gradient-border p-6 md:p-8 rounded-xl border border-neutral-800/20 hover:border-transparent transition-colors">
+                  <h2 className="card-title text-2xl font-semibold mb-4 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-pink-500 text-transparent bg-clip-text">B2B CRM for Accountants</h2>
+                  <div className="h-[300px] md:h-[400px] relative mb-6 rounded-lg overflow-hidden">
+                    <div className="card-image w-full h-full relative">
+                      <a 
+                        href="https://www.mygigsters.com.au/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src="/images/tax-hub.png"
+                          alt="B2B CRM for Accountants"
+                          fill
+                          className="object-cover object-[-100px_0]"
+                          priority
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="font-semibold text-pink-500">Problem</h3>
+                      <p className="text-white/90">How do we better help accountants manage their clients and lodge their clients' tax returns</p>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-pink-500">How</h3>
+                      <p className="text-white/90">Click to find out</p>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-pink-500">Spoiler</h3>
+                      <p className="text-white/90">Launched MVP and onboarded 20 clients</p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </section>

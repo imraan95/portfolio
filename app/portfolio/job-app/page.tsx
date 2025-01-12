@@ -60,18 +60,14 @@ export default function JobAppPage() {
             </div>
 
             {/* Project Details */}
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
-                <h2 className="text-xl font-semibold mb-3 text-pink-500">Scale</h2>
+                <h2 className="text-xl font-semibold mb-3 text-pink-500">Business Scale</h2>
                 <p className="text-white/80">$5M</p>
               </div>
               <div>
-                <h2 className="text-xl font-semibold mb-3 text-pink-500">Timeline</h2>
-                <p className="text-white/80">Jan 2021 - Dec 2022</p>
-              </div>
-              <div>
-                <h2 className="text-xl font-semibold mb-3 text-pink-500">Markets</h2>
-                <p className="text-white/80">36 Countries across Asia</p>
+                <h2 className="text-xl font-semibold mb-3 text-pink-500">Impact</h2>
+                <p className="text-white/80">+30% Market Share</p>
               </div>
             </div>
 
