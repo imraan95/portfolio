@@ -85,15 +85,19 @@ export default function JobAppPage() {
                 <ul className="space-y-4 text-white/80">
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Researched the market, data and users
+                    Created a GTM strategy for new market penetration
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Strategised creating a GTM strategy for new markets, setup a team and launched the product
+                    Setup and managed Google and facebook SEM, SEO and ASO campaigns
                   </li>
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">•</span>
-                    Optimised the experience through growth experiments across the funnel including acquiring traffic, activation rate onsite, and conversion rate
+                    Partnered with local employment agencies in new markets
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-pink-500 mr-2">•</span>
+                    Optimised app conversion rate through localisation and UX challenges
                   </li>
                 </ul>
               </div>
@@ -101,7 +105,7 @@ export default function JobAppPage() {
               <div>
                 <h2 className="text-2xl font-semibold mb-4 text-white">What Happened</h2>
                 <p className="text-white/80 leading-relaxed">
-                  Improved brand positioning and GTM market share by 30% in new markets
+                  Improved brand positioning and setup the product for a growing market share dominance within Asian markets such as MY, PH, ID, SG and VN
                 </p>
               </div>
             </div>

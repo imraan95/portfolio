@@ -101,7 +101,7 @@ export default function FintechPage() {
               <div>
                 <h2 className="text-2xl font-semibold mb-4 text-white">What Happened</h2>
                 <p className="text-white/80 leading-relaxed">
-                  Launched product, had a growth rate of 90% MoM, raised seed round
+                  Strategised MVP feature to solve the problem including Bank account sync for tax benefits, mileage tracking, and early pay features. Hired a remote product and marketing team to bring founder's vision to life. Setup analytics stack to bring 'data' to each idea and vision
                 </p>
               </div>
             </div>
