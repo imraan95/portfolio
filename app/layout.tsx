@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import { Analytics } from '@vercel/analytics/react';
 import Script from 'next/script';
+import { GA_TRACKING_ID } from '@/lib/gtag';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,21 +20,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/images/rocket-favicon.png" />
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-JQ81EYLEHR`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-JQ81EYLEHR');
-          `}
-        </Script>
-      </head>
       <body className={inter.className}>
         <div className="flex flex-col min-h-screen bg-black text-foreground">
           {/* Navigation */}
@@ -60,6 +46,20 @@ export default function RootLayout({
           {children}
         </div>
         <Analytics />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
       </body>
     </html>
   );
