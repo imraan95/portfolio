@@ -62,13 +62,7 @@ export default function ContactPage() {
               Email: <a href="mailto:m.imraan95@gmail.com" className="text-pink-500 hover:text-pink-400">m.imraan95@gmail.com</a>
             </p>
             <div className="space-y-6">
-              <p className="text-xl text-white/80">
-                Feel free to reach out to me at:
-              </p>
               <div className="space-y-4">
-                <a href="mailto:imraan.iqbal95@gmail.com" className="block text-white hover:text-pink-500 transition-colors">
-                  imraan.iqbal95@gmail.com
-                </a>
                 <a href="tel:+61420368580" className="block text-white hover:text-pink-500 transition-colors">
                   +61 420 368 580
                 </a>
