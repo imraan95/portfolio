@@ -33,8 +33,8 @@ export const trackUTM = () => {
   if (utmSource || utmMedium || utmCampaign) {
     // Track the UTM visit
     window.gtag('event', 'utm_visit', {
-      event_category: 'traffic_source',
-      event_label: 'Resume Version',
+      event_category: 'Traffic Source',
+      event_label: 'UTM Parameters',
       utm_source: utmSource,
       utm_medium: utmMedium,
       utm_campaign: utmCampaign
@@ -42,13 +42,24 @@ export const trackUTM = () => {
 
     // Track specific resume version if it's from a resume campaign
     if (utmSource === 'resume_pdf') {
-      const resumeVersion = utmCampaign?.split('_')[0] || 'unknown'; // e.g., 'general', 'ads', 'growth'
       window.gtag('event', 'resume_view', {
-        event_category: 'resume_traffic',
-        event_label: resumeVersion,
-        resume_version: utmCampaign
+        event_category: 'Resume Traffic',
+        event_label: utmCampaign || 'Unknown Version'
       });
     }
+  }
+}
+
+export const trackLinkedInVisit = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const utmSource = urlParams.get('utm_source');
+
+  if (utmSource === 'linkedin') {
+    window.gtag('event', 'linkedin_visit', {
+      event_category: 'Traffic Source',
+      event_label: 'LinkedIn Profile',
+      value: 1
+    });
   }
 }
 

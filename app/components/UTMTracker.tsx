@@ -1,16 +1,18 @@
 'use client';
 
 import { useEffect } from 'react';
-import { trackUTM } from '@/lib/gtag';
 import { usePathname } from 'next/navigation';
+import { trackUTM, trackLinkedInVisit } from '@/lib/gtag';
 
 export default function UTMTracker() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Track UTM parameters on initial load and route changes
+    // Track UTM parameters
     trackUTM();
-  }, [pathname]); // Re-run when pathname changes
+    // Track LinkedIn visits
+    trackLinkedInVisit();
+  }, [pathname]);
 
-  return null; // This component doesn't render anything
+  return null;
 } 
