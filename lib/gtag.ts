@@ -31,13 +31,24 @@ export const trackUTM = () => {
   const utmCampaign = urlParams.get('utm_campaign');
 
   if (utmSource || utmMedium || utmCampaign) {
+    // Track the UTM visit
     window.gtag('event', 'utm_visit', {
       event_category: 'traffic_source',
-      event_label: 'UTM Parameters',
+      event_label: 'Resume Version',
       utm_source: utmSource,
       utm_medium: utmMedium,
       utm_campaign: utmCampaign
     });
+
+    // Track specific resume version if it's from a resume campaign
+    if (utmSource === 'resume_pdf') {
+      const resumeVersion = utmCampaign?.split('_')[0] || 'unknown'; // e.g., 'general', 'ads', 'growth'
+      window.gtag('event', 'resume_view', {
+        event_category: 'resume_traffic',
+        event_label: resumeVersion,
+        resume_version: utmCampaign
+      });
+    }
   }
 }
 
