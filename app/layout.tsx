@@ -4,7 +4,8 @@ import "./globals.css";
 import Link from "next/link";
 import { Analytics } from '@vercel/analytics/react';
 import Script from 'next/script';
-import { GA_TRACKING_ID } from '@/lib/gtag';
+import { GA_TRACKING_ID, trackUTM } from '@/lib/gtag';
+import { useEffect } from 'react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  useEffect(() => {
+    // Track UTM parameters on initial load and route changes
+    trackUTM();
+  }, []);
+
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -57,6 +63,8 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', '${GA_TRACKING_ID}', {
               page_path: window.location.pathname,
+              source_tracking: true,
+              allow_google_signals: true
             });
           `}
         </Script>
