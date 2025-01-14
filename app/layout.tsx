@@ -4,8 +4,8 @@ import "./globals.css";
 import Link from "next/link";
 import { Analytics } from '@vercel/analytics/react';
 import Script from 'next/script';
-import { GA_TRACKING_ID, trackUTM } from '@/lib/gtag';
-import { useEffect } from 'react';
+import { GA_TRACKING_ID } from '@/lib/gtag';
+import UTMTracker from './components/UTMTracker';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,14 +19,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  useEffect(() => {
-    // Track UTM parameters on initial load and route changes
-    trackUTM();
-  }, []);
-
   return (
     <html lang="en">
       <body className={inter.className}>
+        <UTMTracker />
         <div className="flex flex-col min-h-screen bg-black text-foreground">
           {/* Navigation */}
           <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
