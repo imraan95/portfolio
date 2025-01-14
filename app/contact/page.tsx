@@ -57,7 +57,10 @@ export default function ContactPage() {
       <main className="py-4 md:py-8">
         <div className="px-4 md:px-6">
           <div className="max-w-[1200px] mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-8 text-white">Contact</h1>
+            <h1 className="text-3xl font-bold mb-8">Contact</h1>
+            <p className="text-lg mb-4">
+              Email: <a href="mailto:m.imraan95@gmail.com" className="text-pink-500 hover:text-pink-400">m.imraan95@gmail.com</a>
+            </p>
             <div className="space-y-6">
               <p className="text-xl text-white/80">
                 Feel free to reach out to me at:

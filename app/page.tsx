@@ -31,38 +31,26 @@ export default function HomePage() {
     <div className="min-h-screen bg-black text-white">
       <main className="pt-24 md:pt-32">
         <div className="max-w-[800px] mx-auto px-4 md:px-6 text-center">
-          <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden relative">
+          <div className="flex flex-col items-center justify-center space-y-8">
             <Image
               src="/images/Profile Pic.jpeg"
-              alt="Imraan"
-              fill
-              className="object-cover"
-              priority
+              alt="Profile Picture"
+              width={200}
+              height={200}
+              className="rounded-full"
             />
-          </div>
-          <h1 className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 tracking-tight fade-in delay-1 text-center px-4 text-white">
-            Imraan
-          </h1>
-          <div className="max-w-2xl text-center px-4">
-            <p className="text-xl md:text-2xl text-white mb-3 md:mb-4 fade-in delay-2">
-              Tech Product Leader
+            <h1 className="text-4xl md:text-5xl font-bold text-center">
+              Hi, I'm Imraan 👋
+            </h1>
+            <p className="text-xl text-center text-white/80 max-w-2xl">
+              Tech Product Leader specializing in Digital SAAS, Fintech, Marketplace and Consumer products
             </p>
-            <p className="text-lg md:text-xl text-white mb-4 fade-in delay-2">
-              Digital SAAS, Fintech, Marketplace and Consumer products
-            </p>
-            <div className="flex justify-center gap-4 md:gap-6 text-white mb-6 md:mb-8 fade-in delay-2">
-              <span className="flex items-center gap-2 text-sm md:text-base">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Melbourne, Australia
-              </span>
-            </div>
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 fade-in delay-3">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <Link href="/portfolio" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors">
-                Check out my work
+                View Portfolio
               </Link>
               <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-colors">
-                Get in touch
+                Get in Touch
               </Link>
             </div>
           </div>
