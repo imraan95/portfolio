@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useEffect, useRef } from "react"
 import Image from "next/image"
+import { Mail as MailIcon } from 'lucide-react'
+import { Linkedin as LinkedInIcon } from 'lucide-react'
 
 export default function HomePage() {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -45,12 +47,16 @@ export default function HomePage() {
             <p className="text-xl text-center text-white/80 max-w-2xl">
               Tech Product Leader specializing in Digital SAAS, Fintech, Marketplace and Consumer products
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link href="/portfolio" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors">
-                View Portfolio
+            <div className="flex gap-4 justify-center">
+              <Link href="/portfolio" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors">View Portfolio</Link>
+              <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-colors">Get in Touch</Link>
+            </div>
+            <div className="flex gap-4 justify-center mt-12">
+              <Link href="mailto:m.imraan95@gmail.com">
+                <MailIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
               </Link>
-              <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-colors">
-                Get in Touch
+              <Link href="https://www.linkedin.com/in/mohamedimraan/?utm_source=portfolio&utm_medium=profile&utm_campaign=networking" target="_blank" rel="noopener noreferrer">
+                <LinkedInIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
               </Link>
             </div>
           </div>
