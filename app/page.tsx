@@ -51,12 +51,16 @@ export default function HomePage() {
               <Link href="/portfolio" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors">View Portfolio</Link>
               <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-colors">Get in Touch</Link>
             </div>
-            <div className="flex gap-4 justify-center mt-12">
-              <Link href="mailto:m.imraan95@gmail.com">
-                <MailIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
+            <div className="flex justify-center space-x-4 fade-in delay-3">
+              <Link href="mailto:m.imraan95@gmail.com" target="_blank">
+                <Button variant="ghost" size="icon">
+                  <MailIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
+                </Button>
               </Link>
-              <Link href="https://www.linkedin.com/in/mohamedimraan/?utm_source=portfolio&utm_medium=profile&utm_campaign=networking" target="_blank" rel="noopener noreferrer">
-                <LinkedInIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
+              <Link href="https://www.linkedin.com/in/mohamed-imraan/" target="_blank">
+                <Button variant="ghost" size="icon">
+                  <LinkedInIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
+                </Button>
               </Link>
             </div>
             <div className="mt-16"></div>
@@ -64,12 +68,12 @@ export default function HomePage() {
           <div className="flex justify-center space-x-4 fade-in delay-3">
             <Link href="mailto:m.imraan95@gmail.com" target="_blank">
               <Button variant="ghost" size="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <MailIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
               </Button>
             </Link>
             <Link href="https://www.linkedin.com/in/mohamed-imraan/" target="_blank">
               <Button variant="ghost" size="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                <LinkedInIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
               </Button>
             </Link>
           </div>
