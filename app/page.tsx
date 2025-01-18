@@ -53,36 +53,20 @@ export default function HomePage() {
             </div>
             <div className="flex justify-center space-x-4 fade-in delay-3">
               <Link href="mailto:m.imraan95@gmail.com" target="_blank">
-                <Button variant="ghost" size="icon">
-                  <MailIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
-                </Button>
+                <MailIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
               </Link>
               <Link href="https://www.linkedin.com/in/mohamed-imraan/" target="_blank">
-                <Button variant="ghost" size="icon">
-                  <LinkedInIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
-                </Button>
+                <LinkedInIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
               </Link>
             </div>
             <div className="mt-16"></div>
           </div>
-          <div className="flex justify-center space-x-4 fade-in delay-3">
-            <Link href="mailto:m.imraan95@gmail.com" target="_blank">
-              <Button variant="ghost" size="icon">
-                <MailIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
-              </Button>
-            </Link>
-            <Link href="https://www.linkedin.com/in/mohamed-imraan/" target="_blank">
-              <Button variant="ghost" size="icon">
-                <LinkedInIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
-              </Button>
-            </Link>
+          {/* Scroll Down Indicator */}
+          <div className="absolute bottom-8 right-8 animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white opacity-50">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
           </div>
-        </div>
-        {/* Scroll Down Indicator */}
-        <div className="absolute bottom-8 right-8 animate-bounce">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white opacity-50">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
         </div>
       </main>
       <footer className="py-6 md:py-8 px-4 md:px-6 border-t border-neutral-800/50 scroll-animation">
