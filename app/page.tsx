@@ -47,7 +47,7 @@ export default function HomePage() {
             <p className="text-xl text-center text-white/80 max-w-2xl">
               Tech Product Leader specializing in Digital SAAS, Fintech, Marketplace and Consumer products
             </p>
-            <div className="flex gap-4 justify-center">
+            <div className="flex gap-4 justify-center mb-12">
               <Link href="/portfolio" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-pink-600 hover:bg-pink-700 rounded-lg transition-colors">View Portfolio</Link>
               <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-colors">Get in Touch</Link>
             </div>
