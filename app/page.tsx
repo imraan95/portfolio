@@ -59,6 +59,7 @@ export default function HomePage() {
                 <LinkedInIcon className="w-6 h-6 text-white hover:text-pink-500 transition-colors" />
               </Link>
             </div>
+            <div className="mt-16"></div>
           </div>
           <div className="flex justify-center space-x-4 fade-in delay-3">
             <Link href="mailto:m.imraan95@gmail.com" target="_blank">
